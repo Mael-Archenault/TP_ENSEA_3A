@@ -7,8 +7,6 @@
 
 
 int main(){
-
-    // Opening file
     
     char* path = "./test.txt";
     int fd = open(path, O_RDWR);
@@ -18,14 +16,12 @@ int main(){
     }
 
 
-    // Getting file stats
     struct stat file_stat;
     fstat(fd, &file_stat);
 
     size_t file_size = file_stat.st_size;
 
 
-    // Mapping memory
 
     char* file = (char*) mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
     
@@ -34,12 +30,11 @@ int main(){
         temp[i] = file[i];
     }
 
-    // Inverting file
+
     for (int i=0; i<file_size; i++){
         file[i] = temp[file_size-i-1];
     }
 
-    // Freeing memory 
     free(temp);
     if (munmap((void*)file, file_size)==-1){
         perror("Couldn't unmap memory");
