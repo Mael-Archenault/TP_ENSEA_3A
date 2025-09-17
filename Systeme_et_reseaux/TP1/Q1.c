@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/mman.h>
+#include <sys/wait.h>
 
 int global_variable = 64;
 int not_initialized_variable;
@@ -32,22 +33,32 @@ int main(){
     printf("Mmap allocation address: %p\n\r", mmap_variable);
 
 
-
-    //return 0;
-
     // Call of the pmap function (with exec function)
 
-    int pid = getpid();
-
-    char* pid_str = malloc(sizeof(char)*128);
-    snprintf(pid_str, sizeof(pid_str), "%d", pid);
 
 
-    char* args[] = {"pmap", "-X", pid_str, NULL};
 
-    execvp(args[0], args);
+    int pid;
+    int status;
+    pid = fork();
 
-    printf("Test\n\r");
+    if (pid==0){//child process
+
+        pid_t ppid = getppid();
+        char* ppid_str = malloc(sizeof(char)*128);
+        snprintf(ppid_str, sizeof(ppid_str), "%d", ppid);
+    
+    
+        char* args[] = {"pmap", "-X", ppid_str, NULL};
+    
+        execvp(args[0], args);
+
+    }
+
+    else{
+        wait(&status);
+    }
+
    
     return 0;
 }
