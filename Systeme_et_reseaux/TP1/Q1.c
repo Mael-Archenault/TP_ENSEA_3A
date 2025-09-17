@@ -36,8 +36,6 @@ int main(){
     // Call of the pmap function (with exec function)
 
 
-
-
     int pid;
     int status;
     pid = fork();
@@ -55,7 +53,7 @@ int main(){
 
     }
 
-    else{
+    else{//parent process
         wait(&status);
     }
 
