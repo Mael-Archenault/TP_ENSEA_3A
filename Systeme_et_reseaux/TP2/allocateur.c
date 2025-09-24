@@ -21,6 +21,7 @@ void* malloc_3is(size_t block_size){
 
     while(current != NULL){
         if (current->block_size>=block_size){
+            // changing current pointer into char* to change address by bytes (and not by HEADER size)
             HEADER* new =(HEADER* ) ((char*)current + sizeof(HEADER)+block_size+sizeof(MAGIC_NUMBER));
 
             new->ptr_next = current->ptr_next;
@@ -37,7 +38,7 @@ void* malloc_3is(size_t block_size){
             current->ptr_next = NULL;
             current->block_size = block_size;
 
-
+            // writing the magic number after the data block
             *((char*)current + sizeof(HEADER) + block_size) = MAGIC_NUMBER;
 
             return (void*)(current +1);
