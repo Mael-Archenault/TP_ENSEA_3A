@@ -1,0 +1,49 @@
+# OpenFile ./TP_VHDL.mpf
+# Loading project TP_VHDL
+# Compile of RAM2pMxNbits.vhd was successful.
+# Compile of tb_RAM2pMxNbits.vhd was successful.
+# Compile of DCPT_M.vhd was successful.
+# Compile of tb_DCPT_M.vhd was successful.
+# Compile of DCPT_M_PKG.vhd was successful.
+# Compile of GENHL.vhd was successful.
+# Compile of tb_genhl.vhd was successful.
+# Compile of genadr.vhd was successful.
+# Compile of tb_genadr.vhd was successful.
+# Compile of fastslow.vhd was successful.
+# Compile of tb_fastslow.vhd was successful.
+# Compile of twos_complement.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of tb_twos_complement.vhd was successful.
+# Compile of Nbits_register.vhd was successful with warnings.
+# Compile of tb_Nbits_register.vhd was successful.
+# Compile of sequencer.vhd was successful.
+# Compile of tb_sequencer.vhd was successful.
+# Compile of fifo.vhd failed with 1 errors.
+# Compile of cpnt_pkg.vhd was successful.
+# 20 compiles, 1 failed with 1 error.
+vsim work.tb_sequencer
+# vsim work.tb_sequencer 
+# Start time: 22:24:39 on Sep 30,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sequencer(arch)
+# Loading work.sequencer(archi_moore_and_mealy)
+add wave -position insertpoint  \
+sim:/tb_sequencer/ack \
+sim:/tb_sequencer/clk \
+sim:/tb_sequencer/cs_n \
+sim:/tb_sequencer/enread \
+sim:/tb_sequencer/enwrite \
+sim:/tb_sequencer/hl \
+sim:/tb_sequencer/incread \
+sim:/tb_sequencer/incwrite \
+sim:/tb_sequencer/oe \
+sim:/tb_sequencer/req \
+sim:/tb_sequencer/reset \
+sim:/tb_sequencer/rw_n \
+sim:/tb_sequencer/selread
+# Load canceled
+run -all
+# End time: 22:25:21 on Sep 30,2025, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 2

@@ -1,0 +1,45 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity DCPT_M is
+    generic ( M : integer := 4);
+
+
+    Port ( clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           ud : in STD_LOGIC;
+           enable : in STD_LOGIC;
+           cptr: out STD_LOGIC_VECTOR (M-1 downto 0));
+end DCPT_M;
+
+
+architecture Behavioral of DCPT_M is
+signal count : integer range 0 to 2**M-1 := 0;
+begin
+process(clk)
+begin
+    if rising_edge(clk) then
+        if reset = '1' then
+            count <= 0;
+        elsif enable = '1' then
+            if ud = '1' then
+                if count = 2**M-1 then
+                    count <= 0;
+                else
+                    count <= count + 1;
+                end if;
+            else   
+                if count = 0 then
+                    count <= 2**M-1;
+                else
+                    count <= count - 1;
+                end if;
+            end if;
+        end if;
+    end if;
+end process;
+
+cptr <= std_logic_vector(to_unsigned(count, M));
+end Behavioral;

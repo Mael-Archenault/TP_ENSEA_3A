@@ -1,0 +1,45 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.DCPT_M_PKG.all;
+
+use IEEE.NUMERIC_STD.all;
+
+
+entity fastslow is
+    generic (M : integer := 4);
+    port(
+        reset : in std_logic;
+        clk: in std_logic;
+        incread : in std_logic;
+        incwrite : in std_logic;
+        fast : out std_logic;
+        slow : out std_logic
+    );
+
+end entity fastslow;
+
+
+architecture arch of fastslow is
+
+    signal en_sig : std_logic := '0';
+    signal cptr_out: STD_LOGIC_VECTOR (M-1 downto 0);
+
+begin
+
+    u1: DCPT_M
+        generic map (
+            M => M
+        )
+        port map (
+            clk    => clk,
+            reset  => reset,
+            ud     => incwrite,
+            enable => en_sig,
+            cptr   => slow
+        );
+
+    en_sig <= incread xor incwrite;
+    fast <= cptr_out(M-1) nor cptr_out(M-2);
+    slow <= cptr_out(M-1) and cptr_out(M-2);                            
+
+end arch ;

@@ -1,0 +1,68 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity tb_GENHL is
+end entity tb_GENHL;
+
+
+architecture arch of tb_GENHL is
+
+    component GENHL
+        generic (
+            M : integer := 5
+        );
+        port (
+            reset : in STD_LOGIC;
+            clk : in STD_LOGIC;
+            enread : out STD_LOGIC;
+            enwrite : out STD_LOGIC
+        );
+    end component GENHL;
+
+    signal clk    : std_logic := '0';
+    signal reset  : std_logic := '0';
+    signal enread : std_logic;
+    signal enwrite: std_logic;
+begin
+
+    u1: GENHL
+        generic map (
+            M => 5
+        )
+        port map (
+            reset  => reset,
+            clk    => clk,
+            enread => enread,
+            enwrite=> enwrite
+        );
+
+    process
+    begin
+        -- Clock generation
+        while now < 1000 ns loop
+            clk <= '0';
+            wait for 5 ns;
+            clk <= '1';
+            wait for 5 ns;
+        end loop;
+        wait;
+    end process;
+    process
+    begin
+        -- Test sequence
+        reset <= '1';
+        wait for 10 ns;
+        reset <= '0';
+        wait for 150 ns;
+        reset <= '1';
+        wait for 10 ns;
+        reset <= '0';
+        wait for 40 ns;
+        wait;
+        
+
+    end process;
+
+
+end arch ; -- arch

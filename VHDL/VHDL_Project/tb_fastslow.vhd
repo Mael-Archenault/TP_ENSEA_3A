@@ -1,0 +1,76 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity tb_FASTSLOW is
+end entity tb_FASTSLOW;
+
+architecture arch of tb_FASTSLOW is
+
+    component FASTSLOW
+        generic (
+            M : integer := 4
+        );
+        port (
+            reset : in STD_LOGIC;
+            clk : in STD_LOGIC;
+            incread : in STD_LOGIC;
+            incwrite : in STD_LOGIC;
+            fast : out STD_LOGIC;
+            slow : out STD_LOGIC
+        );
+    end component FASTSLOW;
+
+    signal clk    : std_logic := '0';
+    signal reset  : std_logic := '0';
+    signal incread: std_logic := '0';
+    signal incwrite: std_logic := '0';
+    signal fast   : std_logic;
+    signal slow   : std_logic;
+begin
+    u1: FASTSLOW
+        generic map (
+            M => 4
+        )
+        port map (
+            reset  => reset,
+            clk    => clk,
+            incread => incread,
+            incwrite=> incwrite,
+            fast   => fast,
+            slow   => slow
+        );
+
+    process
+    begin
+        -- Clock generation
+        while now < 1000 ns loop
+            clk <= '0';
+            wait for 5 ns;
+            clk <= '1';
+            wait for 5 ns;
+        end loop;
+        wait;
+    end process;
+    process
+    begin
+        -- Test sequence
+        reset <= '1';
+        wait for 10 ns;
+        reset <= '0';
+        wait for 20 ns;
+        
+        incwrite <= '1';
+        wait for 200 ns;
+        incwrite <= '0';
+        wait for 40 ns;
+        
+        incread <= '1';
+        wait for 200 ns;
+        incread <= '0';
+        wait for 40 ns;
+
+        wait;
+    end process;
+
+end arch ;
