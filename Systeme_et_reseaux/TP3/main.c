@@ -1,5 +1,4 @@
 #define FUSE_USE_VERSION 26
-
 #include <stdio.h>
 #include <sys/mman.h>
 #include <fcntl.h>
@@ -10,8 +9,9 @@
 #include <errno.h>
 #include <string.h>
 #include <assert.h>
-#include "tosfs.h"
 #include <fuse/fuse_lowlevel.h>
+#include "tosfs.h"
+#include <math.h>
 
 
 struct tosfs_superblock* superblock;
@@ -66,12 +66,73 @@ static void tosfs_getattr(fuse_req_t req, fuse_ino_t ino,
 }
 
 static void tosfs_lookup(fuse_req_t req, fuse_ino_t parent, const char *name){
+	struct fuse_entry_param e;
+
+	if (parent != 1){
+		fuse_reply_err(req, ENOENT);
+	}
+	else {
+		memset(&e, 0, sizeof(e));
+		e.ino = 2;
+		e.attr_timeout = 1.0;
+		e.entry_timeout = 1.0;
+		tosfs_stat(e.ino, &e.attr);
+
+		fuse_reply_entry(req, &e);
+	}
 }
 
+struct dirbuf {
+	char *p;
+	size_t size;
+};
 
+static void dirbuf_add(fuse_req_t req, struct dirbuf *b, const char *name,
+		       fuse_ino_t ino)
+{
+	struct stat stbuf;
+	size_t oldsize = b->size;
+	b->size += fuse_add_direntry(req, NULL, 0, name, NULL, 0);
+	b->p = (char *) realloc(b->p, b->size);
+	memset(&stbuf, 0, sizeof(stbuf));
+	stbuf.st_ino = ino;
+	fuse_add_direntry(req, b->p + oldsize, b->size - oldsize, name, &stbuf,
+			  b->size);
+}
+
+#define min(x, y) ((x) < (y) ? (x) : (y))
+
+static int reply_buf_limited(fuse_req_t req, const char *buf, size_t bufsize,
+			     off_t off, size_t maxsize)
+{
+	if (off < bufsize)
+		return fuse_reply_buf(req, buf + off,
+				      min(bufsize - off, maxsize));
+	else
+		return fuse_reply_buf(req, NULL, 0);
+}
 static void tosfs_readdir(fuse_req_t req, fuse_ino_t ino, size_t size, off_t off, struct fuse_file_info *fi)
 {
 
+	(void) fi;
+
+	if (!(inodes[ino].mode & S_IFDIR)){
+		printf("Test\n\r");
+		fuse_reply_err(req, ENOTDIR);
+	}
+	else{
+		struct dirbuf b;
+		memset(&b, 0, sizeof(b));
+
+		for (int i = 0; i < superblock->inodes; i++) {
+			if (dentries[i].inode == ino) {
+				printf("name: %s\n", dentries[i].name);
+				dirbuf_add(req, &b, dentries[i].name, ino);
+			}
+		}
+		reply_buf_limited(req, b.p, b.size, off, size);
+		free(b.p);
+	}
 }
 
 static void tosfs_open(fuse_req_t req, fuse_ino_t ino, struct fuse_file_info *fi)
