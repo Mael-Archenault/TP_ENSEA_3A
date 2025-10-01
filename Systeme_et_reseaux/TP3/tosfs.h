@@ -54,7 +54,7 @@ struct tosfs_dentry {
 };
 
 /* inode cache */
-//yypstruct tosfs_inode inode_cache[32*TOSFS_INODE_SIZE];
+//struct tosfs_inode inode_cache[32*TOSFS_INODE_SIZE];
 struct tosfs_inode *inode_cache;
 
 
