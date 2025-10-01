@@ -8,7 +8,7 @@
 
 
 int main() {
-	int fd = open("../test_tosfs_files", O_RDWR);
+	int fd = open("./test_tosfs_files", O_RDWR);
 	if (fd == -1) {
 		perror("Error opening file");
 		return 1;
