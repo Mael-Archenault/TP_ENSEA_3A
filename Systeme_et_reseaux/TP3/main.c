@@ -5,10 +5,20 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include "tosfs.h"
+#include <fuse/fuse_lowlevel.h>
 
+#define _FILE_OFFSET_BITS 64
+
+/*static struct fuse_lowlevel_ops oper = {
+	.lookup		= hello_ll_lookup,
+	.getattr	= hello_ll_getattr,
+	.readdir	= hello_ll_readdir,
+	.open		= hello_ll_open,
+	.read		= hello_ll_read,
+};*/
 
 int main() {
-	int fd = open("./test_tosfs_files", O_RDWR);
+	int fd = open("../test_tosfs_files", O_RDWR);
 	if (fd == -1) {
 		perror("Error opening file");
 		return 1;
@@ -55,6 +65,43 @@ int main() {
 		}
 	}
 
+	struct tosfs_dentry *dentries = (struct tosfs_dentry *)(map + TOSFS_ROOT_BLOCK * TOSFS_BLOCK_SIZE);
+	for (int i = 0; i < superblock->inodes; i++) {
+		if (dentries[i].inode != 0) {
+			printf("=== Dentry ===\n");
+			printf("inode: %u\n", dentries[i].inode);
+			printf("name: %s\n", dentries[i].name);
+			printf("\n");
+		}
+	}
+
+
+/*	struct fuse_args args = FUSE_ARGS_INIT(argc, argv);
+	struct fuse_chan *ch;
+	char *mountpoint;
+	int err = -1;
+
+	if (fuse_parse_cmdline(&args, &mountpoint, NULL, NULL) != -1 &&
+		(ch = fuse_mount(mountpoint, &args)) != NULL) {
+		struct fuse_session *se;
+
+		se = fuse_lowlevel_new(&args, &oper,
+					   sizeof(oper), NULL);
+		if (se != NULL) {
+			if (fuse_set_signal_handlers(se) != -1) {
+				fuse_session_add_chan(se, ch);
+				err = fuse_session_loop(se);
+				fuse_remove_signal_handlers(se);
+				fuse_session_remove_chan(ch);
+			}
+			fuse_session_destroy(se);
+		}
+		fuse_unmount(mountpoint, ch);
+		}
+	fuse_opt_free_args(&args);
+
+	return err ? 1 : 0;
+*/
 
 	return 0;
 }
