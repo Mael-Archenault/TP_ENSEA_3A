@@ -398,7 +398,6 @@ static struct fuse_lowlevel_ops oper = {
 };
 
 
-
 int main(int argc, char* argv[]) {
 	// Mapping the filesystem base into the memory
 	int fd = open("./test_tosfs_files", O_RDWR);

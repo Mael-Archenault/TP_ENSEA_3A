@@ -1,5 +1,5 @@
 library ieee;
-use library ieee;
+use ieee.std_logic_1164.all;
 use work.cpnt_pkg.all;
 
 entity fifo is
@@ -23,15 +23,16 @@ entity fifo is
 end fifo;
 
 
-architecture behavior of fifo is
+architecture fifo_arch of fifo is
 
-    signal register_out, 2cc_out: std_logic_vector(N-1 downto 0);
+    signal register_out, tcc_out: std_logic_vector(N-1 downto 0);
     signal genhl_read_out, genhl_write_out: std_logic;
+    signal seq_cs_out, seq_rw_out, seq_oe_out, seq_selread_out, seq_incread_out,  seq_incwrite_out : std_logic;
+    signal genaddr_out : std_logic_vector(M-1 downto 0);
 
-
-
-    reg: Nbits_register
-        generic map (N => N);
+    begin
+    regN: Nbits_register
+        generic map (N => N)
         port map (
             clk => clk,
             reset => reset,
@@ -39,15 +40,15 @@ architecture behavior of fifo is
             q => register_out
         );
 
-    2CC: twos_complement
-        generic map(N => N);
-        port map (
+    TCC: twos_complement
+        generic map(N => N)
+        port map(
             input_vector => register_out,
-            output_vector => 2cc_out
+            output_vector => tcc_out
         );
 
-    genhl: genhl
-        generic map(M=>200);
+    gen_hl: genhl
+        generic map(M=>250)
         port map(
             reset => reset,
             clk => clk,
@@ -55,5 +56,58 @@ architecture behavior of fifo is
             enwrite => genhl_write_out
         );
 
+    seq: Sequencer
+    port map (
+        clk => clk,
+        reset => reset,
+        enread => genhl_read_out,
+        enwrite => genhl_write_out,
+        req => req,
 
-end architecture behavior;
+        ack => ack, 
+        rw_n => seq_rw_out,
+        oe => seq_oe_out,
+        incwrite => seq_incwrite_out,
+        incread => seq_incread_out,
+        hl => hl,
+        selread => seq_selread_out,
+        cs_n => seq_cs_out
+    );
+
+    gen_addr: genadr
+    generic map(M=>M)
+    port map(
+        reset => reset,
+        clk => clk,
+        incread => seq_incread_out,
+        incwrite => seq_incwrite_out,
+        selread => seq_selread_out,
+        adrg => genaddr_out
+    );
+
+    fast_slow: fastslow
+    generic map(M=>M)
+    port map(
+        reset => reset,
+        clk => clk,
+        incread => seq_incread_out,
+        incwrite => seq_incwrite_out,
+        fast => fast,
+        slow => slow
+    );
+
+    ram: RAM2pMxNbits
+        generic map(
+            N => N,
+            M => M
+        )
+        port map(
+            oe => seq_oe_out,
+            cs_n => seq_cs_out,
+            rw_n => seq_rw_out,
+            addr => genaddr_out,
+            din => tcc_out,
+            dout => dout
+        );
+
+end architecture fifo_arch;
