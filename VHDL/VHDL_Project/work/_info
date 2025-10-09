@@ -8,11 +8,11 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-d/home/mael-archenault/Desktop/VHDL/TP1
+d..
 Pcheck_pkg
 Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z1 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 2111
+!i122 2108
 Z2 w1759216402
 Z3 d/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project
 Z4 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/utils.vhd
@@ -24,9 +24,9 @@ VL[b^oR<l^L8N0aiAW]d6a1
 Z6 OV;C;2020.1;71
 32
 b1
-Z7 !s110 1760025810
+Z7 !s110 1760026344
 !i10b 1
-Z8 !s108 1760025810.000000
+Z8 !s108 1760026344.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/utils.vhd|
 Z10 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/utils.vhd|
 !i113 1
@@ -36,7 +36,7 @@ Bbody
 Z13 DPx4 work 9 check_pkg 0 22 L[b^oR<l^L8N0aiAW]d6a1
 R0
 R1
-!i122 2111
+!i122 2108
 l0
 L52 1
 VJFNO54kN9^1`7KQ9]4?_g0
@@ -54,7 +54,7 @@ R12
 Pcpnt_pkg
 R0
 R1
-!i122 2118
+!i122 2115
 w1759225338
 R3
 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/cpnt_pkg.vhd
@@ -65,52 +65,52 @@ V2VdIeN9MZWS5fT0^f1mPJ0
 !s100 97Jm5Fbe:>XSoXV7;_QKJ2
 R6
 32
-R7
+Z14 !s110 1760026345
 !i10b 1
-R8
+Z15 !s108 1760026345.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/cpnt_pkg.vhd|
 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/cpnt_pkg.vhd|
 !i113 1
 R11
 R12
 Edcpt_m
-Z14 w1758615272
-Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z16 w1758615272
+Z17 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R0
 R1
-!i122 2101
+!i122 2099
 R3
-Z16 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M.vhd
-Z17 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M.vhd
+Z18 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M.vhd
+Z19 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M.vhd
 l0
 L6 1
 V^kSOY8[g]Q9=kHnME@0C31
 !s100 4`odAZ?0RGPY900ToL=<X2
 R6
 32
-Z18 !s110 1760025809
+R7
 !i10b 1
-Z19 !s108 1760025809.000000
+R8
 Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M.vhd|
 Z21 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R15
+R17
 R0
 R1
 DEx4 work 6 dcpt_m 0 22 ^kSOY8[g]Q9=kHnME@0C31
-!i122 2101
+!i122 2099
 l20
 L18 28
 VMiU52I:K[`];TN8m:0:zJ3
 !s100 iI;N]eoPON[EDfaRb^a9V1
 R6
 32
-R18
+R7
 !i10b 1
-R19
+R8
 R20
 R21
 !i113 1
@@ -119,32 +119,32 @@ R12
 Pdcpt_m_pkg
 R0
 R1
-!i122 2103
+!i122 2061
 w1758615789
-R3
-8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M_PKG.vhd
-F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M_PKG.vhd
+d..
+8./DCPT_M_PKG.vhd
+F./DCPT_M_PKG.vhd
 l0
 L6 1
 V`bld3jchj?<a61JM]a=Eg2
 !s100 _E]f52NY4XGA^am0Abken0
 R6
 32
-R7
+!s110 1760025620
 !i10b 1
-R8
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M_PKG.vhd|
-!s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M_PKG.vhd|
+!s108 1760025620.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|./DCPT_M_PKG.vhd|
+!s107 ./DCPT_M_PKG.vhd|
 !i113 1
 R11
 R12
 Efastslow
 Z22 w1758718660
-R15
+R17
 Z23 DPx4 work 10 dcpt_m_pkg 0 22 `bld3jchj?<a61JM]a=Eg2
 R0
 R1
-!i122 2108
+!i122 2105
 R3
 Z24 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/fastslow.vhd
 Z25 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/fastslow.vhd
@@ -163,12 +163,12 @@ Z27 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/fastslow.v
 R11
 R12
 Aarch
-R15
+R17
 R23
 R0
 R1
 DEx4 work 8 fastslow 0 22 RkGE:j1oJ5]leDhK:dimE2
-!i122 2108
+!i122 2105
 l27
 L22 24
 VeEYGY:PaMc_iY<SMKlJhN0
@@ -188,7 +188,7 @@ Z28 w1759825917
 Z29 DPx4 work 8 cpnt_pkg 0 22 2VdIeN9MZWS5fT0^f1mPJ0
 R0
 R1
-!i122 2117
+!i122 2114
 R3
 Z30 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/fifo.vhd
 Z31 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/fifo.vhd
@@ -198,9 +198,9 @@ V9ifQUi?<XfmL_D]AM;g`@1
 !s100 :R[abS1AI:[XhPMleM2300
 R6
 32
-R7
+R14
 !i10b 1
-R8
+R15
 Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/fifo.vhd|
 Z33 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/fifo.vhd|
 !i113 1
@@ -211,16 +211,16 @@ R29
 R0
 R1
 Z34 DEx4 work 4 fifo 0 22 9ifQUi?<XfmL_D]AM;g`@1
-!i122 2117
+!i122 2114
 l33
 Z35 L26 88
 V[nU:nBE3]LdInO[]>>Jj<3
 !s100 ]06eBAJn2bFml:]:1X9ZM0
 R6
 32
-R7
+R14
 !i10b 1
-R8
+R15
 R32
 R33
 !i113 1
@@ -241,20 +241,22 @@ R6
 !s110 1759823478
 !i10b 1
 Z36 !s108 1759823477.000000
-R32
-R33
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|./fifo.vhd|
+!s107 ./fifo.vhd|
 !i113 1
 R11
 R12
 w1759824865
 Z37 d/home/mael-archenault/Desktop/VHDL/TP_VHDL
+F./fifo.vhd
+8./fifo.vhd
 Egenadr
 Z38 w1758618676
 R23
-R15
+R17
 R0
 R1
-!i122 2106
+!i122 2103
 R3
 Z39 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/genadr.vhd
 Z40 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/genadr.vhd
@@ -274,11 +276,11 @@ R11
 R12
 Abehavioral
 R23
-R15
+R17
 R0
 R1
 DEx4 work 6 genadr 0 22 midf24V_B1hVDhQL3bU3c1
-!i122 2106
+!i122 2103
 l24
 L21 30
 VAO0;Vha3IVHaI:A1Ho;M81
@@ -296,10 +298,10 @@ R12
 Egenhl
 Z43 w1758617023
 R23
-R15
+R17
 R0
 R1
-!i122 2104
+!i122 2101
 R3
 Z44 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/GENHL.vhd
 Z45 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/GENHL.vhd
@@ -319,11 +321,11 @@ R11
 R12
 Abehavioral
 R23
-R15
+R17
 R0
 R1
 DEx4 work 5 genhl 0 22 M0[;W>h`fG8cFTLFUhC1U0
-!i122 2104
+!i122 2101
 l24
 L19 24
 Vd>1bmMT`o>N?nm8af?Rjk0
@@ -343,7 +345,7 @@ Z48 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z49 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R0
 R1
-!i122 2111
+!i122 2108
 R2
 R3
 R4
@@ -369,7 +371,7 @@ R48
 R49
 R0
 R1
-!i122 2111
+!i122 2108
 l0
 L11 1
 VX[fS2K^FTTU<^HAmVb?So0
@@ -389,7 +391,7 @@ Z51 w1759215030
 R13
 R0
 R1
-!i122 2113
+!i122 2110
 R3
 Z52 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/Nbits_register.vhd
 Z53 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/Nbits_register.vhd
@@ -412,7 +414,7 @@ R13
 R0
 R1
 DEx4 work 14 nbits_register 0 22 4>hUXWk=E5<h8eajAYmS72
-!i122 2113
+!i122 2110
 l22
 L20 28
 Vn@agiRKoD2EjU7QedF2<o1
@@ -429,10 +431,10 @@ R11
 R12
 Eram2pmxnbits
 Z56 w1758613648
-R15
+R17
 R0
 R1
-!i122 2099
+!i122 2097
 R3
 Z57 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/RAM2pMxNbits.vhd
 Z58 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/RAM2pMxNbits.vhd
@@ -442,29 +444,29 @@ VFX4f;:`7W4^gUeclo0ClT2
 !s100 4ioP<o?^U^:;^0lT3]XZi1
 R6
 32
-R18
+R7
 !i10b 1
-R19
+R8
 Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/RAM2pMxNbits.vhd|
 Z60 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/RAM2pMxNbits.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R15
+R17
 R0
 R1
 DEx4 work 12 ram2pmxnbits 0 22 FX4f;:`7W4^gUeclo0ClT2
-!i122 2099
+!i122 2097
 l26
 L22 20
 VXGj@8f:3CkCGjPi=8P_WS2
 !s100 5TU`K57ml>POLaV:]D<IU1
 R6
 32
-R18
+R7
 !i10b 1
-R19
+R8
 R59
 R60
 !i113 1
@@ -474,7 +476,7 @@ Esequencer
 Z61 w1759826864
 R0
 R1
-!i122 2115
+!i122 2112
 R3
 Z62 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/sequencer.vhd
 Z63 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/sequencer.vhd
@@ -484,9 +486,9 @@ VNc=D]?jWRBJ2@JQDGN>ao1
 !s100 9LnUHA:dmklfhJk1LH`Kl3
 R6
 32
-R7
+R14
 !i10b 1
-R8
+R15
 Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/sequencer.vhd|
 Z65 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/sequencer.vhd|
 !i113 1
@@ -496,16 +498,16 @@ Aarchi_mealy
 R0
 R1
 Z66 DEx4 work 9 sequencer 0 22 Nc=D]?jWRBJ2@JQDGN>ao1
-!i122 2115
+!i122 2112
 l148
 L144 148
 VUVjU>2P4];YRBNggYeXI_3
 !s100 67IMCm52]1?RQf339P5?N2
 R6
 32
-R7
+R14
 !i10b 1
-R8
+R15
 R64
 R65
 !i113 1
@@ -515,16 +517,16 @@ Aarchi_moore
 R0
 R1
 R66
-!i122 2115
+!i122 2112
 l31
 Z67 L27 116
 Vi1=Ri_6i?VhWZclHH2gG;0
 !s100 bN2_IREnOPT:eOHIGz6S62
 R6
 32
-R7
+R14
 !i10b 1
-R8
+R15
 R64
 R65
 !i113 1
@@ -544,19 +546,21 @@ R6
 !s110 1759823477
 !i10b 1
 R36
-R64
-R65
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|./sequencer.vhd|
+!s107 ./sequencer.vhd|
 !i113 1
 R11
 R12
 w1759822849
 R37
+F./sequencer.vhd
+8./sequencer.vhd
 Etb_dcpt_m
 Z68 w1758615593
-R15
+R17
 R0
 R1
-!i122 2102
+!i122 2100
 R3
 Z69 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_DCPT_M.vhd
 Z70 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_DCPT_M.vhd
@@ -568,18 +572,18 @@ R6
 32
 R7
 !i10b 1
-R19
+R8
 Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_DCPT_M.vhd|
 Z72 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_DCPT_M.vhd|
 !i113 1
 R11
 R12
 Aarch
-R15
+R17
 R0
 R1
 DEx4 work 9 tb_dcpt_m 0 22 g_<R3S2D7IJ914gkSS2eI0
-!i122 2102
+!i122 2100
 l30
 L9 69
 VdjRlZGW:D?hkF8Fb4[h3g3
@@ -588,7 +592,7 @@ R6
 32
 R7
 !i10b 1
-R19
+R8
 R71
 R72
 !i113 1
@@ -598,7 +602,7 @@ Etb_fastslow
 Z73 w1758719018
 R0
 R1
-!i122 2109
+!i122 2106
 R3
 Z74 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fastslow.vhd
 Z75 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fastslow.vhd
@@ -620,7 +624,7 @@ Aarch
 R0
 R1
 DEx4 work 11 tb_fastslow 0 22 FU5agjOYHH?]OZSBFi`YK3
-!i122 2109
+!i122 2106
 l30
 L8 69
 V6YMS]DIH9oYRJg]7MYCi>1
@@ -639,7 +643,7 @@ Etb_fifo
 Z78 w1759823472
 R0
 R1
-!i122 2119
+!i122 2116
 R3
 Z79 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fifo.vhd
 Z80 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fifo.vhd
@@ -649,30 +653,30 @@ V8gDL@XK:]Ka[c9agMeRND0
 !s100 hdz`eKmg:=4k3CQ]GPJ`l2
 R6
 32
-Z81 !s110 1760025811
+R14
 !i10b 1
-R8
-Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fifo.vhd|
-Z83 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fifo.vhd|
+R15
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fifo.vhd|
+Z82 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fifo.vhd|
 !i113 1
 R11
 R12
 Abehavior
 R0
 R1
-Z84 DEx4 work 7 tb_fifo 0 22 8gDL@XK:]Ka[c9agMeRND0
-!i122 2119
+Z83 DEx4 work 7 tb_fifo 0 22 8gDL@XK:]Ka[c9agMeRND0
+!i122 2116
 l47
 L9 101
 VHhA9hg:;3PX`j=RPJUOhC3
 !s100 m2A=1e]eBTz56AjdUoS`23
 R6
 32
-R81
+R14
 !i10b 1
-R8
+R15
+R81
 R82
-R83
 !i113 1
 R11
 R12
@@ -683,17 +687,17 @@ R13
 R50
 R49
 R48
-R15
+R17
 R23
 R34
 R66
 R29
 DAx4 work 4 fifo 9 fifo_arch 22 [nU:nBE3]LdInO[]>>Jj<3
 DAx4 work 7 tb_fifo 8 behavior 22 HhA9hg:;3PX`j=RPJUOhC3
-R84
+R83
 R0
 R1
-!i122 2120
+!i122 2117
 w1759827502
 R3
 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/config.vhd
@@ -704,23 +708,23 @@ VO1RSR=MV>VSI5OEVj9h?Q2
 !s100 8EBK_MiYlI130kgV@4Q>W1
 R6
 32
-R81
+R14
 !i10b 1
-!s108 1760025811.000000
+R15
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/config.vhd|
 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/config.vhd|
 !i113 1
 R11
 R12
 Etb_genadr
-Z85 w1758619553
-R15
+Z84 w1758619553
+R17
 R0
 R1
-!i122 2107
+!i122 2104
 R3
-Z86 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd
-Z87 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd
+Z85 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd
+Z86 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd
 l0
 L6 1
 Vo?]b8L49mcU>jeoL3^L=;1
@@ -730,17 +734,17 @@ R6
 R7
 !i10b 1
 R8
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd|
-Z89 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd|
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd|
+Z88 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genadr.vhd|
 !i113 1
 R11
 R12
 Aarch
-R15
+R17
 R0
 R1
 DEx4 work 9 tb_genadr 0 22 o?]b8L49mcU>jeoL3^L=;1
-!i122 2107
+!i122 2104
 l32
 L10 82
 V`MiXB_YM9J6nM9SA:gTHX1
@@ -750,20 +754,20 @@ R6
 R7
 !i10b 1
 R8
+R87
 R88
-R89
 !i113 1
 R11
 R12
 Etb_genhl
-Z90 w1758621503
-R15
+Z89 w1758621503
+R17
 R0
 R1
-!i122 2105
+!i122 2102
 R3
-Z91 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd
-Z92 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd
+Z90 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd
+Z91 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd
 l0
 L5 1
 VAM[J=>kCozhHzbPNEW5^Z0
@@ -773,17 +777,17 @@ R6
 R7
 !i10b 1
 R8
-Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd|
-Z94 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd|
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd|
+Z93 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_genhl.vhd|
 !i113 1
 R11
 R12
 Aarch
-R15
+R17
 R0
 R1
 DEx4 work 8 tb_genhl 0 22 AM[J=>kCozhHzbPNEW5^Z0
-!i122 2105
+!i122 2102
 l27
 L9 60
 V=Ki`779CeLic;eeL:]DI12
@@ -793,31 +797,31 @@ R6
 R7
 !i10b 1
 R8
+R92
 R93
-R94
 !i113 1
 R11
 R12
 Etb_nbits_register
-Z95 w1759213824
+Z94 w1759213824
 R13
 R0
 R1
-!i122 2114
+!i122 2111
 R3
-Z96 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd
-Z97 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd
+Z95 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd
+Z96 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd
 l0
 L6 1
 VmjP8bi;Pk87gjAfTY@jZ53
 !s100 <]fAfzOHM:J465Yl0GDBh3
 R6
 32
-R7
+R14
 !i10b 1
 R8
-Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd|
-Z99 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd|
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd|
+Z98 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_Nbits_register.vhd|
 !i113 1
 R11
 R12
@@ -826,83 +830,83 @@ R13
 R0
 R1
 DEx4 work 17 tb_nbits_register 0 22 mjP8bi;Pk87gjAfTY@jZ53
-!i122 2114
+!i122 2111
 l30
 L9 68
 V3NYB@YhngCAXGObZ[YXaA3
 !s100 koNbXnX3HFMB:<?h6>Z8?3
 R6
 32
-R7
+R14
 !i10b 1
 R8
+R97
 R98
-R99
 !i113 1
 R11
 R12
 Etb_ram2pmxnbits
-Z100 w1758612948
-R15
+Z99 w1758612948
+R17
 R0
 R1
-!i122 2100
+!i122 2098
 R3
-Z101 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd
-Z102 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd
+Z100 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd
+Z101 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd
 l0
 L5 1
 VFMb:W`gLeYgl`9E@j9Fk`0
 !s100 `<n?CV8b9TSMbezo@K2M>1
 R6
 32
-R18
+R7
 !i10b 1
-R19
-Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd|
-Z104 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd|
+R8
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd|
+Z103 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd|
 !i113 1
 R11
 R12
 Aarch
-R15
+R17
 R0
 R1
 DEx4 work 15 tb_ram2pmxnbits 0 22 FMb:W`gLeYgl`9E@j9Fk`0
-!i122 2100
+!i122 2098
 l33
 L9 87
 V3zZaaD7R8SfYZMdX7lSR82
 !s100 UN5W5HVSBN@B5BJK[3U@G3
 R6
 32
-R18
+R7
 !i10b 1
-R19
+R8
+R102
 R103
-R104
 !i113 1
 R11
 R12
 Etb_sequencer
-Z105 w1759223515
+Z104 w1759223515
 R0
 R1
-!i122 2116
+!i122 2113
 R3
-Z106 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd
-Z107 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd
+Z105 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd
+Z106 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd
 l0
 L4 1
 V<G1IHY3d:iKXZadWIYKbS0
 !s100 GYc3aCo<4kWca>DcRkS;@0
 R6
 32
-R7
+R14
 !i10b 1
-R8
-Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd|
-Z109 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd|
+R15
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd|
+Z108 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd|
 !i113 1
 R11
 R12
@@ -910,30 +914,30 @@ Aarch
 R0
 R1
 DEx4 work 12 tb_sequencer 0 22 <G1IHY3d:iKXZadWIYKbS0
-!i122 2116
+!i122 2113
 l44
 L8 98
 V^cgVNminLXj`zbVCDF8IQ2
 !s100 `;9aOm>3e[BYaLiOcgc7:2
 R6
 32
-R7
+R14
 !i10b 1
-R8
+R15
+R107
 R108
-R109
 !i113 1
 R11
 R12
 Etb_twos_complement
-Z110 w1758723200
-R15
+Z109 w1758723200
+R17
 R0
 R1
-!i122 2112
+!i122 2109
 R3
-Z111 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd
-Z112 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd
+Z110 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd
+Z111 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd
 l0
 L5 1
 VV9YlnFZP07IZlOKS3=oX43
@@ -943,17 +947,17 @@ R6
 R7
 !i10b 1
 R8
-Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd|
-Z114 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd|
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd|
+Z113 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_twos_complement.vhd|
 !i113 1
 R11
 R12
 Aarch
-R15
+R17
 R0
 R1
 DEx4 work 18 tb_twos_complement 0 22 V9YlnFZP07IZlOKS3=oX43
-!i122 2112
+!i122 2109
 l24
 L9 52
 VBXl^O>0c;BN;X6k2@>UF73
@@ -963,69 +967,69 @@ R6
 R7
 !i10b 1
 R8
+R112
 R113
-R114
 !i113 1
 R11
 R12
 Etwo_complement
-Z115 w1758720080
+Z114 w1758720080
 R48
 R49
-Z116 DPx4 work 12 my_functions 0 22 1OOKb5l[DdXcOG0PE@geU1
+Z115 DPx4 work 12 my_functions 0 22 1OOKb5l[DdXcOG0PE@geU1
 R0
 R1
 !i122 198
-Z117 d/home/mael-archenault/Desktop/VHDL/TP1_bis
-Z118 8/home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd
-Z119 F/home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd
+Z116 d/home/mael-archenault/Desktop/VHDL/TP1_bis
+Z117 8/home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd
+Z118 F/home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd
 l0
 L5 1
 V4DGI?hkiaY7@K86FF4LI=3
 !s100 GK^i@KF5VAbBbE5>OSc5i1
 R6
 32
-Z120 !s110 1758720096
+Z119 !s110 1758720096
 !i10b 1
-Z121 !s108 1758720096.000000
-Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd|
-Z123 !s107 /home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd|
+Z120 !s108 1758720096.000000
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd|
+Z122 !s107 /home/mael-archenault/Desktop/VHDL/TP1_bis/two_complement.vhd|
 !i113 1
 R11
 R12
 Aarch_two_complement
 R48
 R49
-R116
+R115
 R0
 R1
 DEx4 work 14 two_complement 0 22 4DGI?hkiaY7@K86FF4LI=3
 !i122 198
 l12
-Z124 L11 4
+Z123 L11 4
 V:[[AG95QV>bHPULdWk@3;2
 !s100 zo?60W>^=J122DGVOd3:?3
 R6
 32
-R120
+R119
 !i10b 1
+R120
 R121
 R122
-R123
 !i113 1
 R11
 R12
 Etwos_complement
-Z125 w1758722913
+Z124 w1758722913
 R48
 R49
 R50
 R0
 R1
-!i122 2110
+!i122 2107
 R3
-Z126 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd
-Z127 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd
+Z125 8/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd
+Z126 F/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd
 l0
 L5 1
 VXXVSaA0][OAUSBIFMXKEY1
@@ -1035,8 +1039,8 @@ R6
 R7
 !i10b 1
 R8
-Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd|
-Z129 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd|
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd|
+Z128 !s107 /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd|
 !i113 1
 R11
 R12
@@ -1047,9 +1051,9 @@ R50
 R0
 R1
 DEx4 work 15 twos_complement 0 22 XXVSaA0][OAUSBIFMXKEY1
-!i122 2110
+!i122 2107
 l12
-R124
+R123
 Vh0ellZDOgO27G:P^b@oYH1
 !s100 jPoI]9EzHiP[OiGRfm2=M3
 R6
@@ -1057,8 +1061,8 @@ R6
 R7
 !i10b 1
 R8
+R127
 R128
-R129
 !i113 1
 R11
 R12

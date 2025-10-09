@@ -4,34 +4,6 @@
 # Compile of tb_RAM2pMxNbits.vhd was successful.
 # Compile of DCPT_M.vhd was successful.
 # Compile of tb_DCPT_M.vhd was successful.
-# Compile of DCPT_M_PKG.vhd was successful.
-# Compile of GENHL.vhd was successful.
-# Compile of tb_genhl.vhd was successful.
-# Compile of genadr.vhd was successful.
-# Compile of tb_genadr.vhd was successful.
-# Compile of fastslow.vhd was successful.
-# Compile of tb_fastslow.vhd was successful.
-# Compile of twos_complement.vhd failed with 2 errors.
-# Compile of utils.vhd was successful.
-# Compile of tb_twos_complement.vhd was successful.
-# Compile of Nbits_register.vhd was successful with warnings.
-# Compile of tb_Nbits_register.vhd was successful.
-# Compile of sequencer.vhd was successful.
-# Compile of tb_sequencer.vhd was successful.
-# Compile of fifo.vhd failed with 2 errors.
-# Compile of cpnt_pkg.vhd was successful.
-# Compile of tb_fifo.vhd was successful.
-# Compile of config.vhd failed with 3 errors.
-# 22 compiles, 3 failed with 7 errors.
-# Compile of utils.vhd was successful.
-# Compile of Nbits_register.vhd was successful with warnings.
-# Compile of twos_complement.vhd was successful.
-# Compile of fifo.vhd was successful.
-# Compile of RAM2pMxNbits.vhd was successful.
-# Compile of tb_RAM2pMxNbits.vhd was successful.
-# Compile of DCPT_M.vhd was successful.
-# Compile of tb_DCPT_M.vhd was successful.
-# Compile of DCPT_M_PKG.vhd was successful.
 # Compile of GENHL.vhd was successful.
 # Compile of tb_genhl.vhd was successful.
 # Compile of genadr.vhd was successful.
@@ -49,4 +21,4 @@
 # Compile of cpnt_pkg.vhd was successful.
 # Compile of tb_fifo.vhd was successful.
 # Compile of config.vhd was successful.
-# 22 compiles, 0 failed with no errors.
+# 21 compiles, 0 failed with no errors.
