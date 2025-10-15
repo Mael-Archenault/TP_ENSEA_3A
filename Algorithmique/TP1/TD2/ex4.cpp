@@ -9,6 +9,7 @@ int PGCD_recur(int a, int b){
 }
 
 int PGCD(int a, int b){
+    // making sure a > b for the recursive call
     int highest = std::max(a, b);
     int lowest = std::min(a, b);
     return PGCD_recur(highest, lowest);
