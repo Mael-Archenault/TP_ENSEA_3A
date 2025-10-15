@@ -12,6 +12,7 @@ class QueueByArray {
 public:
 	QueueByArray();
 	void push(int value);
+	int pop();
 };
 
 #endif //QUEUEBYARRAY_HPP

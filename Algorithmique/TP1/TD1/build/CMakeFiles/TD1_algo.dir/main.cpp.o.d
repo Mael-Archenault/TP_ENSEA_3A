@@ -1,5 +1,5 @@
 CMakeFiles/TD1_algo.dir/main.cpp.o: \
- /home/administrateur/CLionProjects/TD1_algo/main.cpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -155,7 +155,9 @@ CMakeFiles/TD1_algo.dir/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/administrateur/CLionProjects/TD1_algo/QueueByArray.hpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/StackByArray.hpp \
  /usr/include/c++/13/array \
- /home/administrateur/CLionProjects/TD1_algo/StackByArray.hpp \
- /home/administrateur/CLionProjects/TD1_algo/StackByLinkedList.hpp
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/StackByLinkedList.hpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/QueueByArray.hpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/QueueByCircularList.hpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/QueueByLinkedList.hpp

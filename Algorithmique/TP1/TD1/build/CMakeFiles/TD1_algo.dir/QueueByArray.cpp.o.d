@@ -1,7 +1,7 @@
 CMakeFiles/TD1_algo.dir/QueueByArray.cpp.o: \
- /home/administrateur/CLionProjects/TD1_algo/QueueByArray.cpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/QueueByArray.cpp \
  /usr/include/stdc-predef.h \
- /home/administrateur/CLionProjects/TD1_algo/QueueByArray.hpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/QueueByArray.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

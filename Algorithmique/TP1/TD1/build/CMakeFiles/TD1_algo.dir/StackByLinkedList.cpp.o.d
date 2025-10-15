@@ -1,7 +1,7 @@
 CMakeFiles/TD1_algo.dir/StackByLinkedList.cpp.o: \
- /home/administrateur/CLionProjects/TD1_algo/StackByLinkedList.cpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/StackByLinkedList.cpp \
  /usr/include/stdc-predef.h \
- /home/administrateur/CLionProjects/TD1_algo/StackByLinkedList.hpp \
+ /home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/StackByLinkedList.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

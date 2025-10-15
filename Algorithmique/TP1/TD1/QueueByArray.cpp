@@ -8,5 +8,16 @@ void QueueByArray::push(int value) {
 	}
 	else {
 		rear++;
+		queue[rear] = value;	}
+}
+
+int QueueByArray::pop() {
+	if (front > rear) {
+		std::cout << "Queue is empty" << std::endl;
+	}
+	else {
+		int popped_value = queue[front];
+		front++;
+		return popped_value;
 	}
 }

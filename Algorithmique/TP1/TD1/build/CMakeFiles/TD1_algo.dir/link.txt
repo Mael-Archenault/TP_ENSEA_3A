@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/TD1_algo.dir/main.cpp.o CMakeFiles/TD1_algo.dir/StackByArray.cpp.o CMakeFiles/TD1_algo.dir/StackByLinkedList.cpp.o CMakeFiles/TD1_algo.dir/QueueByArray.cpp.o -o TD1_algo 
+/usr/bin/c++ -g CMakeFiles/TD1_algo.dir/main.cpp.o CMakeFiles/TD1_algo.dir/StackByArray.cpp.o CMakeFiles/TD1_algo.dir/StackByLinkedList.cpp.o CMakeFiles/TD1_algo.dir/QueueByArray.cpp.o CMakeFiles/TD1_algo.dir/QueueByCircularList.cpp.o CMakeFiles/TD1_algo.dir/QueueByLinkedList.cpp.o -o TD1_algo 

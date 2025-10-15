@@ -9,4 +9,8 @@ add_executable(TD1_algo main.cpp
         StackByLinkedList.cpp
         StackByLinkedList.hpp
         QueueByArray.cpp
-        QueueByArray.hpp)
+        QueueByArray.hpp
+        QueueByCircularList.cpp
+        QueueByCircularList.hpp
+        QueueByLinkedList.cpp
+        QueueByLinkedList.hpp)
