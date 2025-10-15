@@ -61,5 +61,5 @@ int main() {
     std::cout << std::endl;
 
     std::array<int, ARRAY_SIZE> C = {1,2,3,4,9,10,5,6,7};
-    find_longest_subsequence(C);
+    find_longest_subsequence(A);
 }
