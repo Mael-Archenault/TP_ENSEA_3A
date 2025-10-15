@@ -1,3 +1,0 @@
-/home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/build/CMakeFiles/TD1_algo.dir
-/home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/build/CMakeFiles/edit_cache.dir
-/home/administrateur/Documents/git/TP_ENSEA_3A/Algorithmique/TP1/TD1/build/CMakeFiles/rebuild_cache.dir
