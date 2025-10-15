@@ -1,0 +1,12 @@
+# Ignore build directories (top-level and any subfolder)
+build/
+**/build/
+
+# CMake debug/build directories
+cmake-build-debug/
+**/cmake-build-debug/
+
+# Visual Studio Code workspace settings
+.vscode/
+**/.vscode/
+
