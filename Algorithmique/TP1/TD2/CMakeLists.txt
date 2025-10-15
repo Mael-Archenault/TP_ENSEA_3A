@@ -3,4 +3,5 @@ project(TD2_algo)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(TD2_algo)
+add_executable(TD2_algo ex4.cpp
+                ex6.cpp)
