@@ -34,6 +34,9 @@ long mean(long* arr, int size) {
 }
 
 int main() {
+
+
+
     int shmid;
     int semid;
     segment* seg;
@@ -41,14 +44,13 @@ int main() {
     printf("shmid: %d,    semid: %d,    address of attachment: %p\n\r", shmid,semid,seg);
 
     for (int i = 0; i < MAX_REQUESTS; i++) {
-        printf("Request number : %d\n\r", i);
+        printf("\n\rRequest number : %d\n\r", i);
         acq_sem(semid, seg_dispo);
         seg->pid = getpid();
         seg->req = i;
         long local_tab[maxval];
-        for (int j=0; i<maxval; i++){
+        for (int j=0; j<maxval; j++){
             seg->tab[j] = getrand();
-            printf("%ld ", seg->tab[j]);
         }
         long local_mean = mean(seg->tab, maxval);
 
@@ -58,8 +60,9 @@ int main() {
         lib_sem(semid, seg_init);
         lib_sem(semid,seg_dispo);
         
-        printf("%d %d\n\r", server_mean, local_mean);
+        printf("Server mean: %d,   Local mean: %d,  Validation: %d\n\r", server_mean, local_mean, (server_mean==local_mean));
     }
+    
 
     return 0;
 }
