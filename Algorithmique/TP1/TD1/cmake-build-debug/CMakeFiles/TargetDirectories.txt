@@ -1,0 +1,3 @@
+/home/administrateur/CLionProjects/TD1_algo/cmake-build-debug/CMakeFiles/TD1_algo.dir
+/home/administrateur/CLionProjects/TD1_algo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/administrateur/CLionProjects/TD1_algo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
