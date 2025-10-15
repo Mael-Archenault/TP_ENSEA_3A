@@ -24,8 +24,10 @@ int StackByArray::pop() {
 }
 
 void StackByArray::displayStack() {
+	std::cout<<"--Stack contents--"<<std::endl;
 	for (int i = 0; i < top; i++) {
 		std::cout << stack[i] << std::endl;
 	}
+	std::cout<<"--------------"<<std::endl;
 }
 

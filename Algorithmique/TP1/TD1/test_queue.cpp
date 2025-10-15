@@ -1,7 +1,7 @@
 #include <iostream>
-#include "QueueByArray.hpp"
-#include "QueueByCircularList.hpp"
-#include "QueueByLinkedList.hpp"
+#include "Queue/QueueByArray.hpp"
+#include "Queue/QueueByCircularList.hpp"
+#include "Queue/QueueByLinkedList.hpp"
 
 
 int main(){

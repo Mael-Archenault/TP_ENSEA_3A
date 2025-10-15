@@ -23,9 +23,12 @@ int StackByLinkedList::pop() {
 }
 
 void StackByLinkedList::displayStack() {
+
+	std::cout<<"--Stack contents--"<<std::endl;
 	TNode *P = top;
 	while (P != nullptr) {
 		std::cout << P->value << std::endl;
 		P = P->next;
 	}
+	std::cout<<"--------------"<<std::endl;
 }

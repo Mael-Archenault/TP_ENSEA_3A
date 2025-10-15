@@ -1,6 +1,6 @@
 #include <iostream>
-#include "StackByArray.hpp"
-#include "StackByLinkedList.hpp"
+#include "Stack/StackByArray.hpp"
+#include "Stack/StackByLinkedList.hpp"
 
 
 

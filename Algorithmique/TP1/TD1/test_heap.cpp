@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Binary_Heap_Max.hpp"
-#include "Binary_Heap_Min.hpp"
+#include "Heap/Binary_Heap_Max.hpp"
+#include "Heap/Binary_Heap_Min.hpp"
 
 
 
@@ -16,10 +16,10 @@ int main(){
     Binary_Heap_Max.push(5);
     std::cout<<"Pushing "<<15<<std::endl;
     Binary_Heap_Max.push(15);
-    std::cout << "Popped: " << Binary_Heap_Max.pop() << std::endl; // Should print 20
-    std::cout << "Popped: " << Binary_Heap_Max.pop() << std::endl; // Should print 15
-    std::cout << "Popped: " << Binary_Heap_Max.pop() << std::endl; // Should print 10
-    std::cout << "Popped: " << Binary_Heap_Max.pop() << std::endl; // should print 5
+    std::cout << "Popped from heap max " << Binary_Heap_Max.pop() << std::endl; // Should print 20
+    std::cout << "Popped from heap max " << Binary_Heap_Max.pop() << std::endl; // Should print 15
+    std::cout << "Popped from heap max " << Binary_Heap_Max.pop() << std::endl; // Should print 10
+    std::cout << "Popped from heap max " << Binary_Heap_Max.pop() << std::endl; // should print 5
 
     std::cout<<std::endl;
 
@@ -34,9 +34,9 @@ int main(){
     Binary_Heap_Min.push(5);
     std::cout<<"Pushing "<<15<<std::endl;
     Binary_Heap_Min.push(15);
-    std::cout << "Popped: " << Binary_Heap_Min.pop() << std::endl; // Should print 5
-    std::cout << "Popped: " << Binary_Heap_Min.pop() << std::endl; // Should print 10
-    std::cout << "Popped: " << Binary_Heap_Min.pop() << std::endl; // Should print 15
-    std::cout << "Popped: " << Binary_Heap_Min.pop() << std::endl; // should print 20
+    std::cout << "Popped from heap min " << Binary_Heap_Min.pop() << std::endl; // Should print 5
+    std::cout << "Popped from heap min " << Binary_Heap_Min.pop() << std::endl; // Should print 10
+    std::cout << "Popped from heap min " << Binary_Heap_Min.pop() << std::endl; // Should print 15
+    std::cout << "Popped from heap min " << Binary_Heap_Min.pop() << std::endl; // should print 20
     return 0;
 }
