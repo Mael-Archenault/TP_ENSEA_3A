@@ -1,6 +1,0 @@
-# ninja log v6
-1	525	1759131743681591897	CMakeFiles/TD1_algo.dir/main.cpp.o	d74cff2553fdcbf6
-526	631	1759131744206589808	TD1_algo	4c48e901bbc2a811
-3	389	1759128895517624405	CMakeFiles/TD1_algo.dir/StackByArray.cpp.o	d8e0ca431373819b
-5	626	1759131721026682101	CMakeFiles/TD1_algo.dir/StackByLinkedList.cpp.o	7de6b00b4332865
-9	634	1759131721030682085	CMakeFiles/TD1_algo.dir/QueueByArray.cpp.o	830928a9703333d7
