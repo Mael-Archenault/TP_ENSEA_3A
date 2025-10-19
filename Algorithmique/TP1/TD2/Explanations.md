@@ -8,6 +8,3 @@ On peut alors voir un motif de récursion apparaître. On réduira la valeur des
 
 Le cas de base qui finira la récursion est le cas où le nombre le plus petit (b) est nul: dans ce cas, le pgcd est directement la deuxième valeur (a)
 
-## Exercice 6
-
-Le but est de déterminer la plus grande sous séquence d'un tableau d'entiers non ordonnés, ainsique 
