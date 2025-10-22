@@ -9,7 +9,7 @@
 #define MIN_INT_VAL -10000
 #define MAX_INT_VAL 10000
 
-#define MAX_SEQ_LEN 1000
+#define MAX_SEQ_LEN 5000
 
 void load_input_file(const std::string& filename, int& list_size, std::vector<int>& data) {
     std::ifstream file(filename);
@@ -36,7 +36,7 @@ void load_input_file(const std::string& filename, int& list_size, std::vector<in
     
 }
 
-void write_output_file(const std::string& filename,const int& subsequence_size, const std::vector<int>& subsequence) {
+void write_output_file(const std::string& filename,const int& subsequence_size, const std::vector<int>& subsequence, const std::vector<int>& indices) {
     std::ofstream file(filename);
     if (!file.is_open()) {
         std::cerr << "Error opening file: " << filename << std::endl;
@@ -44,15 +44,15 @@ void write_output_file(const std::string& filename,const int& subsequence_size, 
     }
     file << subsequence_size << std::endl;
 
-    for (const int& val : subsequence) {
-        file << val << " ";
+    for (int i=0; i<subsequence.size(); i++) {
+        file <<"a["<< indices[i] << "] = "<< subsequence[i] << std::endl;
     }
     file << std::endl;
     file.close();
 }
 
 
-void find_longest_subsequence(std::array<int, MAX_SEQ_LEN>& A, int array_size, int& res_subsequence_size, std::vector<int>& res_subsequence) {
+void find_longest_subsequence(std::array<int, MAX_SEQ_LEN>& A, int array_size, int& res_subsequence_size, std::vector<int>& res_subsequence, std::vector<int>& res_indices) {
     int L[array_size];
     int previous[array_size];
     for (int i = 0; i < array_size; i++) {
@@ -79,13 +79,20 @@ void find_longest_subsequence(std::array<int, MAX_SEQ_LEN>& A, int array_size, i
     }
 
     std::vector<int> subsequence;
+    std::vector<int> indices;
     for (int i = lastIndex; i != -1; i = previous[i]) {
         subsequence.push_back(A[i]);
+        indices.push_back(i);
     }
     std::reverse(subsequence.begin(), subsequence.end());
+    std::reverse(indices.begin(), indices.end());
 
     res_subsequence_size = maxLen;
     res_subsequence = subsequence;
+    res_indices = indices;
+
+
+
 }
 
 
@@ -94,7 +101,7 @@ int main() {
     std::vector<int> data_vector;
     load_input_file("../inpmonoseq.txt", array_size, data_vector);
 
-    // Affichage des données chargées
+    // Displaying loaded data
     std::cout<<"Loaded data"<<std::endl;
     std::cout << "List size: " << array_size << std::endl;
     std::cout << "Data: ";
@@ -110,10 +117,17 @@ int main() {
 
     int subsequence_size = 0;
     std::vector<int> subsequence;
-    find_longest_subsequence(A, array_size, subsequence_size, subsequence);
+    std::vector<int> indices;
+    find_longest_subsequence(A, array_size, subsequence_size, subsequence, indices);
 
-    write_output_file("../outmonoseq.txt", subsequence_size, subsequence);
+    write_output_file("../outmonoseq.txt", subsequence_size, subsequence, indices);
 
-    
-    
+    // Displaying results
+    std::cout<<"Results"<<std::endl;
+    std::cout << "Subsequence size: " << subsequence_size << std::endl
+                << "Subsequence: ";
+    for (int val : subsequence) {
+        std::cout << val << " ";
+    }
+    std::cout<<std::endl;
 }
