@@ -120,15 +120,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity fastslow
 -- Compiling architecture arch of fastslow
 
-} {} {}} ./tb_DCPT_M.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_DCPT_M.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity tb_DCPT_M
--- Compiling architecture arch of tb_DCPT_M
-
 } {} {}} ./tb_RAM2pMxNbits.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_RAM2pMxNbits.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -149,6 +140,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 ** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/Nbits_register.vhd(27): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
 ** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/Nbits_register.vhd(32): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
 
+} {} {}} ./tb_DCPT_M.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_DCPT_M.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_DCPT_M
+-- Compiling architecture arch of tb_DCPT_M
+
+} {} {}} ./cpnt_pkg.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/cpnt_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package cpnt_pkg
+
 } {} {}} ./GENHL.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/GENHL.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -159,12 +166,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity GENHL
 -- Compiling architecture Behavioral of GENHL
 
-} {} {}} ./cpnt_pkg.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/cpnt_pkg.vhd
+} {} {}} ./RAM2pMxNbits.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/RAM2pMxNbits.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling package cpnt_pkg
+-- Loading package NUMERIC_STD
+-- Compiling entity RAM2pMxNbits
+-- Compiling architecture Behavioral of RAM2pMxNbits
 
 } {} {}} ./DCPT_M.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/DCPT_M.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -175,14 +184,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity DCPT_M
 -- Compiling architecture Behavioral of DCPT_M
 
-} {} {}} ./RAM2pMxNbits.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/RAM2pMxNbits.vhd
+} {} {}} ./tb_sequencer.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity RAM2pMxNbits
--- Compiling architecture Behavioral of RAM2pMxNbits
+-- Compiling entity tb_sequencer
+-- Compiling architecture arch of tb_sequencer
 
 } {} {}} ./twos_complement.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/twos_complement.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -194,21 +202,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package my_functions
 -- Compiling entity twos_complement
 -- Compiling architecture arch_twos_complement of twos_complement
-
-} {} {}} ./tb_sequencer.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_sequencer.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_sequencer
--- Compiling architecture arch of tb_sequencer
-
-} {} {}} ./tb_fifo.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/tb_fifo.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_fifo
--- Compiling architecture behavior of tb_fifo
 
 } {} {}}

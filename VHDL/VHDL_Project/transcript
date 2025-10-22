@@ -1,5 +1,120 @@
 # OpenFile TP_VHDL.mpf
 # Loading project TP_VHDL
+# Compile of tb_RAM2pMxNbits.vhd was successful.
+vsim work.tb_ram2pmxnbits
+# vsim work.tb_ram2pmxnbits 
+# Start time: 10:25:55 on Oct 21,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_ram2pmxnbits(arch)
+# Loading work.ram2pmxnbits(behavioral)
+add wave -position insertpoint  \
+sim:/tb_ram2pmxnbits/addr \
+sim:/tb_ram2pmxnbits/cs_n \
+sim:/tb_ram2pmxnbits/din \
+sim:/tb_ram2pmxnbits/dout \
+sim:/tb_ram2pmxnbits/oe \
+sim:/tb_ram2pmxnbits/rw_n
+run -all
+vsim work.tb_nbits_register
+# End time: 10:28:27 on Oct 21,2025, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 2
+# vsim work.tb_nbits_register 
+# Start time: 10:28:27 on Oct 21,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.check_pkg(body)
+# Loading work.tb_nbits_register(behavioral)
+# Loading work.nbits_register(behavioral)
+add wave -position insertpoint  \
+sim:/tb_nbits_register/clk \
+sim:/tb_nbits_register/d \
+sim:/tb_nbits_register/N \
+sim:/tb_nbits_register/q \
+sim:/tb_nbits_register/reset
+run -all
+# ** Warning: setup time not met
+#    Time: 30 ns  Iteration: 1  Instance: /tb_nbits_register/u1
+# ** Warning: hold time not met
+#    Time: 72 ns  Iteration: 1  Instance: /tb_nbits_register/u1
+vsim work.tb_fifo_cfg
+# End time: 10:51:07 on Oct 21,2025, Elapsed time: 0:22:40
+# Errors: 0, Warnings: 3
+# vsim work.tb_fifo_cfg 
+# Start time: 10:51:07 on Oct 21,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpnt_pkg
+# Loading work.dcpt_m_pkg
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.my_functions(body)
+# Loading work.check_pkg(body)
+# Loading work.tb_fifo_cfg
+# Loading work.tb_fifo(behavior)
+# Loading work.fifo(fifo_arch)
+# Loading work.nbits_register(behavioral)
+# Loading work.twos_complement(arch_twos_complement)
+# Loading work.genhl(behavioral)
+# Loading work.dcpt_m(behavioral)
+# Loading work.sequencer(archi_moore)
+# Loading work.genadr(behavioral)
+# Loading work.fastslow(arch)
+# Loading work.ram2pmxnbits(behavioral)
+add wave -position insertpoint  \
+sim:/tb_fifo/ack \
+sim:/tb_fifo/clk \
+sim:/tb_fifo/clk_period \
+sim:/tb_fifo/din \
+sim:/tb_fifo/dout \
+sim:/tb_fifo/fast \
+sim:/tb_fifo/hl \
+sim:/tb_fifo/M \
+sim:/tb_fifo/N \
+sim:/tb_fifo/req \
+sim:/tb_fifo/reset \
+sim:/tb_fifo/slow
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/ram/ram
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+vsim work.tb_fifo
+# End time: 11:10:48 on Oct 21,2025, Elapsed time: 0:19:41
+# Errors: 0, Warnings: 2
+# vsim work.tb_fifo 
+# Start time: 11:10:48 on Oct 21,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_fifo(behavior)
+# Loading work.cpnt_pkg
+# Loading work.fifo(fifo_arch)
+# Loading work.check_pkg(body)
+# Loading work.nbits_register(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.my_functions(body)
+# Loading work.twos_complement(arch_twos_complement)
+# Loading ieee.numeric_std(body)
+# Loading work.dcpt_m_pkg
+# Loading work.genhl(behavioral)
+# Loading work.dcpt_m(behavioral)
+# Loading work.sequencer(archi_mealy)
+# Loading work.genadr(behavioral)
+# Loading work.fastslow(arch)
+# Loading work.ram2pmxnbits(behavioral)
 # Compile of RAM2pMxNbits.vhd was successful.
 # Compile of tb_RAM2pMxNbits.vhd was successful.
 # Compile of DCPT_M.vhd was successful.
@@ -22,3 +137,277 @@
 # Compile of tb_fifo.vhd was successful.
 # Compile of config.vhd was successful.
 # 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_fifo(behavior)
+# Loading work.cpnt_pkg
+# Loading work.fifo(fifo_arch)
+# Loading work.check_pkg(body)
+# Loading work.nbits_register(behavioral)
+# Loading work.my_functions(body)
+# Loading work.twos_complement(arch_twos_complement)
+# Loading work.genhl(behavioral)
+# Loading work.dcpt_m(behavioral)
+# Loading work.sequencer(archi_mealy)
+# Loading work.genadr(behavioral)
+# Loading work.fastslow(arch)
+# Loading work.ram2pmxnbits(behavioral)
+add wave -position insertpoint  \
+sim:/tb_fifo/ack \
+sim:/tb_fifo/clk \
+sim:/tb_fifo/clk_period \
+sim:/tb_fifo/din \
+sim:/tb_fifo/dout \
+sim:/tb_fifo/fast \
+sim:/tb_fifo/hl \
+sim:/tb_fifo/M \
+sim:/tb_fifo/N \
+sim:/tb_fifo/req \
+sim:/tb_fifo/reset \
+sim:/tb_fifo/slow
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/ram/ram
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# Compile of RAM2pMxNbits.vhd was successful.
+# Compile of tb_RAM2pMxNbits.vhd was successful.
+# Compile of DCPT_M.vhd was successful.
+# Compile of tb_DCPT_M.vhd was successful.
+# Compile of GENHL.vhd was successful.
+# Compile of tb_genhl.vhd was successful.
+# Compile of genadr.vhd was successful.
+# Compile of tb_genadr.vhd was successful.
+# Compile of fastslow.vhd was successful.
+# Compile of tb_fastslow.vhd was successful.
+# Compile of twos_complement.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of tb_twos_complement.vhd was successful.
+# Compile of Nbits_register.vhd was successful with warnings.
+# Compile of tb_Nbits_register.vhd was successful.
+# Compile of sequencer.vhd was successful.
+# Compile of tb_sequencer.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of cpnt_pkg.vhd was successful.
+# Compile of tb_fifo.vhd was successful.
+# Compile of config.vhd was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_fifo(behavior)
+# Loading work.cpnt_pkg
+# Loading work.fifo(fifo_arch)
+# Loading work.check_pkg(body)
+# Loading work.nbits_register(behavioral)
+# Loading work.my_functions(body)
+# Loading work.twos_complement(arch_twos_complement)
+# Loading work.genhl(behavioral)
+# Loading work.dcpt_m(behavioral)
+# Loading work.sequencer(archi_mealy)
+# Loading work.genadr(behavioral)
+# Loading work.fastslow(arch)
+# Loading work.ram2pmxnbits(behavioral)
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 170 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+# Compile of RAM2pMxNbits.vhd was successful.
+# Compile of tb_RAM2pMxNbits.vhd was successful.
+# Compile of DCPT_M.vhd was successful.
+# Compile of tb_DCPT_M.vhd was successful.
+# Compile of GENHL.vhd was successful.
+# Compile of tb_genhl.vhd was successful.
+# Compile of genadr.vhd was successful.
+# Compile of tb_genadr.vhd was successful.
+# Compile of fastslow.vhd was successful.
+# Compile of tb_fastslow.vhd was successful.
+# Compile of twos_complement.vhd was successful.
+# Compile of utils.vhd was successful.
+# Compile of tb_twos_complement.vhd was successful.
+# Compile of Nbits_register.vhd was successful with warnings.
+# Compile of tb_Nbits_register.vhd was successful.
+# Compile of sequencer.vhd was successful.
+# Compile of tb_sequencer.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of cpnt_pkg.vhd was successful.
+# Compile of tb_fifo.vhd was successful.
+# Compile of config.vhd was successful.
+# 21 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_fifo(behavior)
+# Loading work.cpnt_pkg
+# Loading work.fifo(fifo_arch)
+# Loading work.check_pkg(body)
+# Loading work.nbits_register(behavioral)
+# Loading work.my_functions(body)
+# Loading work.twos_complement(arch_twos_complement)
+# Loading work.genhl(behavioral)
+# Loading work.dcpt_m(behavioral)
+# Loading work.sequencer(archi_mealy)
+# Loading work.genadr(behavioral)
+# Loading work.fastslow(arch)
+# Loading work.ram2pmxnbits(behavioral)
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/ram/rw_n
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/ram/cs_n
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/seq/current_state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/seq/next_state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+vcom -work work -2002 -explicit /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/config.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:47 on Oct 21,2025
+# vcom -reportprogress 300 -work work -2002 -explicit /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/config.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling configuration tb_fifo_cfg
+# -- Loading entity tb_fifo
+# -- Loading architecture behavior of tb_fifo
+# -- Loading package cpnt_pkg
+# -- Loading entity fifo
+# -- Loading architecture fifo_arch of fifo
+# -- Loading package CHECK_PKG
+# -- Loading entity Nbits_register
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package my_functions
+# -- Loading entity twos_complement
+# -- Loading package NUMERIC_STD
+# -- Loading package dcpt_m_pkg
+# -- Loading entity GENHL
+# -- Loading entity Sequencer
+# -- Loading entity genadr
+# -- Loading entity fastslow
+# -- Loading entity RAM2pMxNbits
+# End time: 11:37:48 on Oct 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work -2002 -explicit /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/config.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:53 on Oct 21,2025
+# vcom -reportprogress 300 -work work -2002 -explicit /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/VHDL_Project/config.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling configuration tb_fifo_cfg
+# -- Loading entity tb_fifo
+# -- Loading architecture behavior of tb_fifo
+# -- Loading package cpnt_pkg
+# -- Loading entity fifo
+# -- Loading architecture fifo_arch of fifo
+# -- Loading package CHECK_PKG
+# -- Loading entity Nbits_register
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package my_functions
+# -- Loading entity twos_complement
+# -- Loading package NUMERIC_STD
+# -- Loading package dcpt_m_pkg
+# -- Loading entity GENHL
+# -- Loading entity Sequencer
+# -- Loading entity genadr
+# -- Loading entity fastslow
+# -- Loading entity RAM2pMxNbits
+# End time: 11:37:53 on Oct 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_fifo_cfg
+# End time: 11:37:58 on Oct 21,2025, Elapsed time: 0:27:10
+# Errors: 0, Warnings: 3
+# vsim work.tb_fifo_cfg 
+# Start time: 11:37:58 on Oct 21,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpnt_pkg
+# Loading work.dcpt_m_pkg
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.my_functions(body)
+# Loading work.check_pkg(body)
+# Loading work.tb_fifo_cfg
+# Loading work.tb_fifo(behavior)
+# Loading work.fifo(fifo_arch)
+# Loading work.nbits_register(behavioral)
+# Loading work.twos_complement(arch_twos_complement)
+# Loading work.genhl(behavioral)
+# Loading work.dcpt_m(behavioral)
+# Loading work.sequencer(archi_moore)
+# Loading work.genadr(behavioral)
+# Loading work.fastslow(arch)
+# Loading work.ram2pmxnbits(behavioral)
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/seq/cs_n \
+sim:/tb_fifo/u1/seq/current_state \
+sim:/tb_fifo/u1/seq/next_state
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+add wave -position insertpoint  \
+sim:/tb_fifo/ack \
+sim:/tb_fifo/clk \
+sim:/tb_fifo/clk_period \
+sim:/tb_fifo/din \
+sim:/tb_fifo/dout \
+sim:/tb_fifo/fast \
+sim:/tb_fifo/hl \
+sim:/tb_fifo/M \
+sim:/tb_fifo/N \
+sim:/tb_fifo/req \
+sim:/tb_fifo/reset \
+sim:/tb_fifo/slow
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN
+add wave -position insertpoint  \
+sim:/tb_fifo/u1/ram/ram
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fifo/u1/TCC
+# ** Warning: setup time not met
+#    Time: 190 ns  Iteration: 1  Instance: /tb_fifo/u1/regN

@@ -81,23 +81,23 @@ begin
         wait for clk_period*2;
 
         din <= "00000001";
-	wait for clk_period/4;
+	wait for clk_period/2;
         req <= '0';
-        wait for clk_period/2;
+        wait for clk_period*2;
         req <= '1';
         wait for clk_period*2;
 
         din <= "00000010";
-	wait for clk_period/4;
+	wait for clk_period/2;
         req <= '0';
-        wait for clk_period/2;
+        wait for clk_period*2;
         req <= '1';
         wait for clk_period*2;
 
         din <= "00000011";
-	wait for clk_period/4;
+	wait for clk_period/2;
         req <= '0';
-        wait for clk_period/2;
+        wait for clk_period*2;
         req <= '1';
 
         wait;
