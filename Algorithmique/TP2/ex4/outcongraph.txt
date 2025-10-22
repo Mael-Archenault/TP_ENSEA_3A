@@ -1,0 +1,8 @@
+Graphs contains 2 connected subgraphs
+
+Connected subgraph 1: 
+1 2 
+
+Connected subgraph 2: 
+3 5 4 
+
