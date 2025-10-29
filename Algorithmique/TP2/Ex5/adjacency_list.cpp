@@ -15,14 +15,15 @@ class Graph{
     public:
         int n_nodes;
         int n_edges;
-        std::vector<std::vector<int>> matrix;
+        std::vector<std::vector<std::pair<int, int>>> list;
         Graph(): n_nodes(0), n_edges(0) {}
 
         void display(){
             std::cout << "Graph with " << n_nodes << " nodes and " << n_edges << " edges." << std::endl;
             for(int i=0; i<n_nodes; i++){
-                for(int j=0; j<n_nodes; j++){
-                    std::cout << matrix[i][j] << " ";
+                std::cout << "Node " << i << ": ";
+                for(auto neighbor : list[i]){
+                    std::cout << "(" << neighbor.first << ", " << neighbor.second << ") ";
                 }
                 std::cout << std::endl;
             }
@@ -52,19 +53,18 @@ void load_input_file(const std::string& filename, Graph& graph, int& starting_no
         std::cerr << "Error opening file: " << filename << std::endl;
         throw std::runtime_error("File not found");
     }
-
     file >> graph.n_nodes >> graph.n_edges >> starting_node >> ending_node;
     starting_node--;
     ending_node--;
-    graph.matrix.resize(graph.n_nodes, std::vector<int>(graph.n_nodes, 0));
+    graph.list.resize(graph.n_nodes);
 
     for(int i=0; i<graph.n_edges; i++){
         int u = 0;
         int v = 0;
         int weight = 0;
         file >> u >> v >> weight;
-        graph.matrix[u-1][v-1] = weight;
-        graph.matrix[v-1][u-1] = weight;
+        graph.list.at(u-1).push_back(std::make_pair(v-1, weight));
+        graph.list.at(v-1).push_back(std::make_pair(u-1, weight));
     } 
 }
 
@@ -139,20 +139,13 @@ void find_shortest_path(Graph& graph, int starting_node, int ending_node, Path& 
             continue;
         }
         
-        // get neighbors node to the current node
-        std::vector<int> neighbors;
-        for (int i =0; i < graph.n_nodes; i++){
-            if (graph.matrix[current_node][i] != 0){
-                neighbors.push_back(i);
-            }
-        }
-
-        for (auto neighbor: neighbors){
-            int new_path_dist = distances[current_node] + graph.matrix[current_node][neighbor];
-            if (new_path_dist <= distances[neighbor]){
-                distances[neighbor] = new_path_dist;
-                best_paths[neighbor] = best_paths[current_node];
-                best_paths[neighbor].push_back(current_node);
+        
+        for (auto neighbor: graph.list.at(current_node)){
+            int new_path_dist = distances[current_node] + neighbor.second;
+            if (new_path_dist <= distances[neighbor.first]){
+                distances[neighbor.first] = new_path_dist;
+                best_paths[neighbor.first] = best_paths[current_node];
+                best_paths[neighbor.first].push_back(current_node);
             }
         }
 
@@ -176,6 +169,7 @@ void find_shortest_path(Graph& graph, int starting_node, int ending_node, Path& 
     for (auto& node : path.nodes){
         node += 1; // to have nodes starting from 1
     }
+
 
 }
 
