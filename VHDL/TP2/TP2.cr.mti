@@ -1,0 +1,38 @@
+/home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/img_generator.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/img_generator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package entree_sortie_pkg
+-- Compiling entity generator
+-- Compiling architecture arch_half of generator
+-- Compiling architecture arch_center_rectangle of Generator
+-- Loading entity generator
+-- Compiling architecture arch_diag_half of generator
+-- Loading entity generator
+-- Compiling architecture arch_diamond of generator
+-- Loading entity generator
+
+} {} {}} /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd {2 {vcom -work work -2002 -explicit -stats=none /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling package entree_sortie_pkg
+-- Compiling package body entree_sortie_pkg
+-- Loading package entree_sortie_pkg
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(31): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(36): (vcom-1283) Cannot reference file "FI" inside pure function "get_pixels".
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(37): (vcom-1283) Cannot reference file "FI" inside pure function "get_pixels".
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(38): (vcom-1283) Cannot reference file "FI" inside pure function "get_pixels".
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(39): (vcom-1283) Cannot reference file "FI" inside pure function "get_pixels".
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(40): (vcom-1283) Cannot reference file "FI" inside pure function "get_pixels".
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(43): (vcom-1283) Cannot reference file "FI" inside pure function "get_pixels".
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(44): (vcom-1283) Cannot reference file "FI" inside pure function "get_pixels".
+** Warning: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd(60): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+} {} {}}

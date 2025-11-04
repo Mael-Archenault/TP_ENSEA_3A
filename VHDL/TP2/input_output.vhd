@@ -1,0 +1,144 @@
+library ieee;
+use work.entree_sortie_pkg.all;
+use ieee.math_real.all;
+
+entity Processing is
+    generic (
+        N_col : integer := 256;
+        N_ligne : integer := 256
+    );
+end Processing;
+
+architecture arch_inv of Processing is
+begin
+    process
+        variable image_in : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable image_out : IMAGE2D(1 to N_col, 1 to N_ligne);
+    begin
+        image_in := get_pixels("img_txt/diag_half.txt", N_col, N_ligne);
+        
+        for i in 1 to N_ligne loop
+            for j in 1 to N_col loop
+                image_out(i, j) := 255 - image_in(i, j);
+            end loop;
+        end loop;
+        
+        put_pixels("img_txt/diag_half_inv.txt", image_out, N_col, N_ligne, 8);
+        
+        wait;
+    end process;
+end arch_inv;
+
+architecture arch_moy3x3 of Processing is
+begin
+    process
+        variable image_in : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable image_out : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable sum : integer;
+    begin
+        image_in := get_pixels("img_txt/diag_half.txt", N_col, N_ligne);
+        -- if pixel not on border
+        for i in 2 to N_ligne-1 loop
+            for j in 2 to N_col-1 loop
+                sum := image_in(i, j) + image_in(i-1, j) + image_in(i+1, j) + image_in(i, j+1) + image_in(i-1, j+1) + image_in(i+1, j+1) +
+                image_in(i, j-1) + image_in(i-1, j-1) + image_in(i+1, j-1);
+                image_out(i, j) := sum / 9;
+            end loop;
+        end loop;
+
+        put_pixels("img_txt/diag_half_moy3x3.txt", image_out, N_col, N_ligne, 8);
+
+        wait;
+    end process;
+end arch_moy3x3;
+
+architecture arch_sobelx of Processing is
+begin
+    process
+        variable image_in : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable image_out : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable sum : integer;
+    begin
+        image_in := get_pixels("img_txt/diag_half.txt", N_col, N_ligne);
+        -- if pixel not on border
+        for i in 2 to N_ligne-1 loop
+            for j in 2 to N_col-1 loop
+                sum := 1 * image_in(i-1, j-1) - 1 * image_in(i-1, j+1)
+                      +2 * image_in(i, j-1)   - 2 * image_in(i, j+1)
+                      +1 * image_in(i+1, j-1) - 1 * image_in(i+1, j+1);
+                -- clamp value to [0, 255]
+                sum := abs(sum);
+                if sum > 255 then
+                    image_out(i, j) := 255;
+                else
+                    image_out(i, j) := sum;
+                end if;
+            end loop;
+        end loop;
+
+        put_pixels("img_txt/diag_half_sobelx.txt", image_out, N_col, N_ligne, 8);
+
+        wait;
+    end process;
+end arch_sobelx;
+
+architecture arch_sobely of Processing is
+begin
+    process
+        variable image_in : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable image_out : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable gy : integer;
+    begin
+        image_in := get_pixels("img_txt/half.txt", N_col, N_ligne);
+        -- if pixel not on border
+        for i in 2 to N_ligne-1 loop
+            for j in 2 to N_col-1 loop
+                gy := 1 * image_in(i-1, j-1) + 2 * image_in(i-1, j) + 1 * image_in(i-1, j+1)
+                      -1 * image_in(i+1, j-1) - 2 * image_in(i+1, j) - 1 * image_in(i+1, j+1);
+                -- clamp value to [0, 255]
+                gy := abs(gy);
+                if gy > 255 then
+                    image_out(i, j) := 255;
+                else
+                    image_out(i, j) := gy;
+                end if;
+            end loop;
+        end loop;
+        put_pixels("img_txt/diag_half_sobely.txt", image_out, N_col, N_ligne, 8);
+        wait;
+    end process;
+end arch_sobely;
+
+architecture arch_gradient of Processing is
+-- square root of (gx^2 + gy^2)
+begin
+    process
+        variable image_in : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable image_out : IMAGE2D(1 to N_col, 1 to N_ligne);
+        variable gx, gy : integer;
+        variable grad : integer;
+    begin
+        image_in := get_pixels("img_txt/diag_half.txt", N_col, N_ligne);
+        -- if pixel not on border
+        for i in 2 to N_ligne-1 loop
+            for j in 2 to N_col-1 loop
+                gx := 1 * image_in(i-1, j-1) - 1 * image_in(i-1, j+1)
+                      +2 * image_in(i, j-1)   - 2 * image_in(i, j+1)
+                      +1 * image_in(i+1, j-1) - 1 * image_in(i+1, j+1);
+                gy := 1 * image_in(i-1, j-1) + 2 * image_in(i-1, j) + 1 * image_in(i-1, j+1)
+                      -1 * image_in(i+1, j-1) - 2 * image_in(i+1, j) - 1 * image_in(i+1, j+1);
+                grad := integer(sqrt(real(gx * gx + gy * gy)));
+                -- clamp value to [0, 255]
+                if grad < 0 then
+                    image_out(i, j) := 0;
+                elsif grad > 255 then
+                    image_out(i, j) := 255;
+                else
+                    image_out(i, j) := grad;
+                end if;
+            end loop;
+        end loop;
+        put_pixels("img_txt/diag_half_gradient.txt", image_out, N_col, N_ligne, 8);
+        wait;
+    end process;
+end arch_gradient;  

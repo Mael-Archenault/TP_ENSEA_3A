@@ -1,0 +1,445 @@
+# vsim . 
+# Start time: 08:52:24 on Nov 04,2025
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 08:52:24 on Nov 04,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Loading project TP2
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.processing(arch_inv)
+# vsim work.processing(arch_inv) 
+# Start time: 08:57:02 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading work.processing(arch_inv)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd failed with 8 errors.
+# 2 compiles, 1 failed with 8 errors.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd failed with 5 errors.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.processing(arch_sobelx)
+# End time: 09:26:24 on Nov 04,2025, Elapsed time: 0:29:22
+# Errors: 0, Warnings: 11
+# vsim work.processing(arch_sobelx) 
+# Start time: 09:26:24 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading work.processing(arch_sobelx)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.entree_sortie_pkg(body)
+# Loading work.processing(arch_sobelx)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.entree_sortie_pkg(body)
+# Loading work.processing(arch_sobelx)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+vsim work.processing(arch_gradient)
+# End time: 09:45:54 on Nov 04,2025, Elapsed time: 0:19:30
+# Errors: 0, Warnings: 5
+# vsim work.processing(arch_gradient) 
+# Start time: 09:45:54 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_gradient)
+# ** Warning: (vsim-7) Failed to open VHDL file "femme.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /processing
+# ** Fatal: (vsim-7) Failed to open VHDL file "femme.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /processing/line__118 File: /home/mael-archenault/Desktop/TP_ENSEA_3A/VHDL/TP2/entree_sortie_pkg.vhd
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 09:45:54 on Nov 04,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+clear
+# [H[2J[3J
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim work.processing(arch_gradient)
+# vsim work.processing(arch_gradient) 
+# Start time: 09:47:20 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_gradient)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.generator(arch_half)
+# End time: 09:56:56 on Nov 04,2025, Elapsed time: 0:09:36
+# Errors: 0, Warnings: 8
+# vsim work.generator(arch_half) 
+# Start time: 09:56:56 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading work.generator(arch_half)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.generator(arch_diag_half)
+# End time: 10:08:18 on Nov 04,2025, Elapsed time: 0:11:22
+# Errors: 0, Warnings: 2
+# vsim work.generator(arch_diag_half) 
+# Start time: 10:08:18 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading work.generator(arch_diag_half)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.entree_sortie_pkg(body)
+# Loading work.generator(arch_diag_half)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.generator(arch_diamond)
+# End time: 10:17:38 on Nov 04,2025, Elapsed time: 0:09:20
+# Errors: 0, Warnings: 2
+# vsim work.generator(arch_diamond) 
+# Start time: 10:17:38 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading work.generator(arch_diamond)
+# Load canceled
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.entree_sortie_pkg(body)
+# Loading work.generator(arch_diamond)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.entree_sortie_pkg(body)
+# Loading work.generator(arch_diamond)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.generator(arch_half)
+# End time: 10:33:51 on Nov 04,2025, Elapsed time: 0:16:13
+# Errors: 0, Warnings: 2
+# vsim work.generator(arch_half) 
+# Start time: 10:33:51 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading work.generator(arch_half)
+run -all
+vsim work.processing(arch_inv)
+# End time: 10:34:32 on Nov 04,2025, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_inv) 
+# Start time: 10:34:32 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_inv)
+run -all
+vsim work.processing(arch_moy3x3)
+# End time: 10:35:28 on Nov 04,2025, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_moy3x3) 
+# Start time: 10:35:29 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_moy3x3)
+run -all
+vsim work.processing(arch_sobelx)
+# End time: 10:35:41 on Nov 04,2025, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_sobelx) 
+# Start time: 10:35:41 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_sobelx)
+run -all
+run -all
+vsim work.processing(arch_sobely)
+# End time: 10:36:08 on Nov 04,2025, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_sobely) 
+# Start time: 10:36:08 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_sobely)
+run -all
+vsim work.processing(arch_gradient)
+# End time: 10:36:25 on Nov 04,2025, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_gradient) 
+# Start time: 10:36:25 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_gradient)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd failed with 1 errors.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.entree_sortie_pkg(body)
+# Loading work.processing(arch_gradient)
+vsim work.processing(arch_sobely)
+# End time: 10:50:25 on Nov 04,2025, Elapsed time: 0:14:00
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_sobely) 
+# Start time: 10:50:25 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_sobely)
+run -all
+vsim work.processing(arch_sobelx)
+# End time: 10:50:37 on Nov 04,2025, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_sobelx) 
+# Start time: 10:50:37 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_sobelx)
+run -all
+restart -f
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.entree_sortie_pkg(body)
+# Loading work.processing(arch_sobelx)
+run -all
+vsim work.processing(arch_sobely)
+# End time: 10:52:43 on Nov 04,2025, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_sobely) 
+# Start time: 10:52:43 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_sobely)
+run -all
+# Compile of entree_sortie_pkg.vhd was successful with warnings.
+# Compile of input_output.vhd was successful.
+# Compile of img_generator.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.processing(arch_inv)
+# End time: 10:55:24 on Nov 04,2025, Elapsed time: 0:02:41
+# Errors: 0, Warnings: 2
+# vsim work.processing(arch_inv) 
+# Start time: 10:55:24 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_inv)
+run -all
+vsim work.processing(arch_moy3x3)
+# End time: 10:55:37 on Nov 04,2025, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_moy3x3) 
+# Start time: 10:55:37 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_moy3x3)
+run -all
+vsim work.processing(arch_sobelx)
+# End time: 10:55:47 on Nov 04,2025, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_sobelx) 
+# Start time: 10:55:47 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_sobelx)
+run -all
+vsim work.processing(arch_sobely)
+# End time: 10:55:59 on Nov 04,2025, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_sobely) 
+# Start time: 10:55:59 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_sobely)
+run
+run -all
+vsim work.processing(arch_gradient)
+# End time: 10:56:13 on Nov 04,2025, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 1
+# vsim work.processing(arch_gradient) 
+# Start time: 10:56:13 on Nov 04,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.entree_sortie_pkg(body)
+# Loading ieee.math_real(body)
+# Loading work.processing(arch_gradient)
+run -all
