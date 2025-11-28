@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log ublaze_system_dlmb_v10_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ublaze_system_dlmb_v10_1.tcl
+

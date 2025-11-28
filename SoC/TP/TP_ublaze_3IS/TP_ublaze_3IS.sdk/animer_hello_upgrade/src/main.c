@@ -1,0 +1,151 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "sleep.h"
+#include "xtmrctr.h"
+#include "xintc.h"
+#include "xil_exception.h"
+
+#define TIMER_CNTR 0
+#define TMRCTR_DEVICE_ID		XPAR_TMRCTR_0_DEVICE_ID
+#define INTC_DEVICE_ID			XPAR_INTC_0_DEVICE_ID
+#define TMRCTR_INTERRUPT_ID		XPAR_INTC_0_TMRCTR_0_VEC_ID
+
+XGpio leds;
+XGpio switches;
+XGpio buttons;
+XGpio seg_disp;
+XGpio seg_an;
+XIntc xintc;  /* The instance of the Interrupt Controller */
+XTmrCtr TimerInst;   /* The instance of the Timer Counter */
+
+
+int init_timer(void);
+static int init_interrupts(void);
+void Timer_ISR_Handler(void *CallBackRef, u8 TmrCtrNumber);
+int speed_divider = 1;
+int reset_value = 100000000;
+
+int message_in_hex[12] = {0xff, 0x89, 0x86, 0xc7, 0xc7, 0xc0, 0xff, 0xa4, 0xc0, 0xa4, 0x92, 0xff};
+static int count = 0;
+int timer_running = 0;
+int direction = 0;
+
+
+void initGPIO(){
+	XGpio_Initialize(&leds,XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&leds, 1, 0x0000);
+
+	XGpio_Initialize(&switches,XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&switches, 2, 0xffff);
+
+	XGpio_Initialize(&buttons,XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio_SetDataDirection(&buttons, 1, 0xffff);
+
+	XGpio_Initialize(&seg_disp,XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio_SetDataDirection(&seg_disp, 2, 0x0000);
+
+	XGpio_Initialize(&seg_an,XPAR_AXI_GPIO_2_DEVICE_ID);
+	XGpio_SetDataDirection(&seg_an, 1, 0x0000);
+}
+
+int init_timer(void)
+{
+	int Status;
+	Status = XTmrCtr_Initialize(&TimerInst, TMRCTR_DEVICE_ID);
+	if (Status != XST_SUCCESS) { return XST_FAILURE;}
+		XTmrCtr_SetHandler(&TimerInst, Timer_ISR_Handler, &TimerInst);
+	XTmrCtr_SetOptions(&TimerInst, TIMER_CNTR,	XTC_DOWN_COUNT_OPTION | XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION); // A COMPLETER POUR COMPTEUR EN DECREMENTATION
+	XTmrCtr_SetResetValue(&TimerInst, TIMER_CNTR, reset_value/speed_divider);
+	XTmrCtr_Start(&TimerInst, TIMER_CNTR);
+	timer_running = 1;
+
+	return XST_SUCCESS;
+}
+
+static int init_interrupts(void)
+{
+	int Status;
+	Status = XIntc_Initialize(&xintc, INTC_DEVICE_ID);
+	if (Status != XST_SUCCESS) return XST_FAILURE;
+		Status = XIntc_Connect(&xintc, TMRCTR_INTERRUPT_ID,	(XInterruptHandler)XTmrCtr_InterruptHandler,(void *)&TimerInst);
+	if (Status != XST_SUCCESS) return XST_FAILURE;
+		Status = XIntc_Start(&xintc, XIN_REAL_MODE);
+	if (Status != XST_SUCCESS) return XST_FAILURE;
+		XIntc_Enable(&xintc, TMRCTR_INTERRUPT_ID);
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler) XIntc_InterruptHandler, &xintc);
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}
+
+void Timer_ISR_Handler(void *CallBackRef, u8 TmrCtrNumber) {
+		count++;
+		xil_printf("Interrupt %d\n", count);
+		XGpio_DiscreteWrite(&leds,1,(0x1 << (count%16)));
+}
+
+void afficher_hello(int position){
+	for (int j = 0; j < 4; j++){
+		XGpio_DiscreteWrite(&seg_an, 1, 0xffff - (1<<(3-j)));
+		XGpio_DiscreteWrite(&seg_disp, 2,message_in_hex[(position+j)%12]);
+		usleep(5000);
+	}
+}
+
+void animer_message(int sens){
+
+			int position = (sens==0)?count%12:12-(count%12);
+			afficher_hello(position);
+
+}
+
+void update_speed() {
+	uint32_t i = XGpio_DiscreteRead(&switches,2);
+	speed_divider = (i & 0xf);
+	if (speed_divider == 0  && timer_running==1) {
+		XTmrCtr_Stop(&TimerInst, TIMER_CNTR);
+		timer_running = 0;
+	}
+	else if(speed_divider !=0){
+		if (timer_running ==0){
+			XTmrCtr_Start(&TimerInst, TIMER_CNTR);
+			timer_running = 1;
+		}
+		XTmrCtr_SetResetValue(&TimerInst, TIMER_CNTR, reset_value/speed_divider);
+
+	}
+}
+
+void update_direction(){
+	uint32_t i = XGpio_DiscreteRead(&switches,2);
+	direction = (i & 0x8000) >> 15;
+}
+
+
+int main() {
+    init_platform();
+    initGPIO();
+
+    print("Hello World\n\r");
+    init_timer();
+    init_interrupts();
+    while(1){
+    	animer_message(direction);
+    	update_speed();
+    	update_direction();
+    }
+
+    cleanup_platform();
+    return 0;
+}
+
+// Fonction d'initialisation du Timer
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+15:13:43 **** Incremental Build of configuration Debug for project leds ****
+make all 
+make: Nothing to be done for 'all'.
+
+15:13:44 Build Finished (took 432ms)
+

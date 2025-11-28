@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Fri Nov  7 14:36:11 2025
+# Process ID: 16216
+# Current directory: U:/Documents/SoC/Tutoriel/tutorial/tutorial.runs/synth_1
+# Command line: vivado.exe -log ublaze_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ublaze_wrapper.tcl
+# Log file: U:/Documents/SoC/Tutoriel/tutorial/tutorial.runs/synth_1/ublaze_wrapper.vds
+# Journal file: U:/Documents/SoC/Tutoriel/tutorial/tutorial.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ublaze_wrapper.tcl -notrace

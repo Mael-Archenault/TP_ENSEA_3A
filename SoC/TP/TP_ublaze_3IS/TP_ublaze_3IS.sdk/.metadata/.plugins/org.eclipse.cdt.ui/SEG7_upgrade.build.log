@@ -1,0 +1,13 @@
+17:04:31 **** Build of configuration Debug for project SEG7_upgrade ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../SEG7_upgrade_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:50:10: fatal error: SEG7_IP.h: No such file or directory
+ #include "SEG7_IP.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+
+17:04:32 Build Finished (took 677ms)
+

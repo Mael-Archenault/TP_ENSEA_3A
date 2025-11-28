@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "sleep.h"
+
+
+int hex_to_seg7[16] = {
+		0x40, //0
+		0xf9, //1
+		0x24, //2
+		0x30, //3
+		0x19, //4
+		0x12, //5
+		0x02, //6
+		0xf8, //7
+		0x00, //8
+		0x10, //9
+		0x08, //A
+		0x03, //B
+		0x46, //C
+		0x21, //D
+		0x06, //E
+		0x0e  //F
+};
+
+
+XGpio leds;
+XGpio switches;
+XGpio buttons;
+XGpio seg_disp;
+XGpio seg_an;
+
+
+void initGPIO(){
+	XGpio_Initialize(&leds,XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&leds, 1, 0x0000);
+	XGpio_Initialize(&switches,XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&switches, 2, 0xffff);
+	XGpio_Initialize(&buttons,XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio_SetDataDirection(&buttons, 1, 0xffff);
+	XGpio_Initialize(&seg_disp,XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio_SetDataDirection(&seg_disp, 2, 0x0000);
+	XGpio_Initialize(&seg_an,XPAR_AXI_GPIO_2_DEVICE_ID);
+	XGpio_SetDataDirection(&seg_an, 1, 0x0000);
+
+}
+
+
+void sw2_seg(){
+	int read_value = XGpio_DiscreteRead(&switches,2);
+	int digits[4] = {
+			(read_value & 0x000f) >> 0,
+			(read_value & 0x00f0) >> 4,
+			(read_value & 0x0f00) >> 8,
+			(read_value & 0xf000) >> 12
+	};
+
+	for (int i = 0; i<4; i++){
+		if (digits[i]>15){
+			digits[i] = 15;
+		}
+		XGpio_DiscreteWrite(&seg_an, 1, 0xffff - (1<<i));
+	    XGpio_DiscreteWrite(&seg_disp, 2,hex_to_seg7[digits[i]]);
+	    usleep(1000);
+	}
+}
+
+
+
+int main()
+{
+    init_platform();
+
+    initGPIO();
+
+    while(1){
+    	sw2_seg();
+    }
+
+    cleanup_platform();
+    return 0;
+}

@@ -1,0 +1,2989 @@
+!SESSION 2025-11-28 15:39:52.722 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk
+
+This is a continuation of log file U:\Documents\SoC\TP\TP_ublaze_3IS\TP_ublaze_3IS.sdk\.metadata\.bak_0.log
+Created Time: 2025-11-28 15:51:32.732
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.734
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.745
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.747
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.758
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.760
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.779
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.782
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.792
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.795
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.806
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.809
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.828
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.831
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.841
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.843
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.853
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.856
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.875
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.878
+!MESSAGE XSCT Command: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.889
+!MESSAGE XSCT command with result: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.893
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.908
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.911
+!MESSAGE XSCT Command: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.918
+!MESSAGE XSCT command with result: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.921
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.936
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.941
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.952
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.955
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.965
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.968
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.987
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:32.990
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.001
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.003
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.014
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.017
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.035
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_SEG7_bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.037
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.048
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.051
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.061
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.064
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.083
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.087
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.098
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.100
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.111
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.113
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.131
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-mlittle-endian -mxl-soft-mul -mcpu=v11.0",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.135
+!MESSAGE XSCT Command: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.141
+!MESSAGE XSCT command with result: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.144
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.159
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.163
+!MESSAGE XSCT Command: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.170
+!MESSAGE XSCT command with result: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.173
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:33.188
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:35.443
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -sw animer_hello_upgrade_bsp -dir U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp -processor microblaze_0 -os standalone -app hello_world], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:35.495
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -sw animer_hello_upgrade_bsp -dir U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp -processor microblaze_0 -os standalone -app hello_world], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:35.690
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:35.701
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:35.704
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:35.718
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:35.721
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:40.731
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.063
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.074
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.077
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.089
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.098
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.110
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"axi_gpio_0": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_gpio_1": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_gpio_2": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.9",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.9",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.125
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.136
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.139
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.152
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.157
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.170
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.204
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.211
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.878
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.885
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.888
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.896
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.899
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.907
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.910
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.918
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.921
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.929
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.932
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.939
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.943
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.953
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.957
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.979
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.989
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:41.992
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.004
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"axi_gpio_0": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_gpio_1": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_gpio_2": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.9",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.9",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.007
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.017
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.019
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.030
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.033
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.039
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.069
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.085
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.088
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.098
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.102
+!MESSAGE XSCT Command: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.109
+!MESSAGE XSCT command with result: [::hsi::utils::openhw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.112
+!MESSAGE XSCT Command: [::hsi::utils::opensw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.119
+!MESSAGE XSCT command with result: [::hsi::utils::opensw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.122
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss -app hello_world -processor microblaze_0 -os standalone -dir U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.225
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf -sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss -app hello_world -processor microblaze_0 -os standalone -dir U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.480
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.499
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.501
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.517
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.521
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.532
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.534
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.545
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.565
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.578
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {"axi_gpio_0": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_gpio_1": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_gpio_2": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.9",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.9",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.581
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.587
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.612
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.624
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.626
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.637
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:42.648
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.652
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.672
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.701
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:51:42.710
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:42.746
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:42.750
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:42.873
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:42.884
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:42.984
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:42.989
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:43.158
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:43.164
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:43.334
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:43.340
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:44.496
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:44.501
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:44.689
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:44.693
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:44.875
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:44.879
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:44.961
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:45.675
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:45.813
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:45.823
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:45.907
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:46.124
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:46.129
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:46.248
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:47.046
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:47.050
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:47.116
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:47.855
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:47.869
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:48.201
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:49.962
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:49.965
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:49.967
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:51.626
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:51.632
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:51.701
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:52.645
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:52.649
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:52.722
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:53.481
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2025-11-28 15:51:53.534
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-28 15:51:53.957
+!MESSAGE Indexed 'animer_hello_upgrade' (2 sources, 52 headers) in 0,196 sec: 1 533 declarations; 2 236 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-11-28 15:51:54.780
+!MESSAGE Indexed 'animer_hello_upgrade_bsp' (62 sources, 100 headers) in 0,813 sec: 2 338 declarations; 9 800 references; 39 unresolved inclusions; 5 syntax errors; 35 unresolved names (0,29 %)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:46.216
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:46.281
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:46.284
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:46.295
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:46.298
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:46.306
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:48.454
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_PROFILE_SIZE], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:48.464
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_PROFILE_SIZE], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:51.748
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-623
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:51.753
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-623
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-11-28 15:52:52.761
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.764
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.773
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.776
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.787
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.791
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.799
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.802
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.820
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.822
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.844
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.849
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.853
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.857
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.861
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.865
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.874
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.877
+!MESSAGE XSCT Command: [version -server], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.880
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1.2]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.883
+!MESSAGE XSCT Command: [version], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.886
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1.2
+SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.889
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.896
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.900
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.916
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.920
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.928
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.931
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.947
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.956
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.963
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.966
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.981
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.984
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.990
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:52.994
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.009
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.012
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.028
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.031
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.035
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.038
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.042
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.045
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.077
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.080
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.122
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.126
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.168
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.172
+!MESSAGE XSCT Command: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade/Debug/animer_hello_upgrade.elf], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.280
+!MESSAGE XSCT command with result: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_upgrade/Debug/animer_hello_upgrade.elf], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.354
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.380
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.384
+!MESSAGE XSCT Command: [con], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:52:53.392
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:02.891
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:02.928
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:02.931
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:02.942
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:02.944
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:02.951
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:12.658
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:12.675
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:12.678
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:12.688
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:12.691
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:54:12.697
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/test_bsp/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:32.477
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:32.509
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:32.511
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:32.522
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:32.525
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:32.533
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:43.001
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-673
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:43.006
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-673
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-11-28 15:57:44.004
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.007
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.015
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.017
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.027
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.030
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.038
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.042
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.058
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.063
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.084
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.088
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.093
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.099
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.104
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.109
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.120
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.124
+!MESSAGE XSCT Command: [version -server], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.128
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1.2]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.131
+!MESSAGE XSCT Command: [version], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.134
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1.2
+SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.137
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.144
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.148
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.165
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.168
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.176
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.180
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.197
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.201
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.209
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.213
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.230
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.234
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.272
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.276
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.292
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.303
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.326
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.329
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.333
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.337
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.341
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.346
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.381
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.384
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.432
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.435
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.465
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.468
+!MESSAGE XSCT Command: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP/Debug/Test_IP.elf], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.542
+!MESSAGE XSCT command with result: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/Test_IP/Debug/Test_IP.elf], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.611
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.637
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.641
+!MESSAGE XSCT Command: [con], Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 15:57:44.650
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:00:58.571
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:00:58.614
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:00:58.617
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:00:58.629
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:00:58.632
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:00:58.639
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:07.111
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:07.125
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:07.128
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:07.138
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:07.141
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:07.148
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/upgrade_animer_hello_bsp/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.554
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.578
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.581
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.596
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.598
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.612
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.616
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.628
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.630
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.643
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_upgrade_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Result: [null, {"SEG7_IP_0": {"name": "SEG7_IP",
+"ver": "1.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_gpio_1": {"name": "gpio",
+"ver": "4.4",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.9",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.9",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.648
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:01:22.657
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/SEG7_IP_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:38.870
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:38.905
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:38.907
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:38.918
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/ublaze_system_wrapper_hw_platform_0/system.hdf U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:38.920
+!MESSAGE XSCT Command: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:38.927
+!MESSAGE XSCT command with result: [::hsi::utils::closesw U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:43.923
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-767
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:43.929
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-767
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-11-28 16:07:44.929
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.933
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.939
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.943
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.955
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.959
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.967
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.971
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.988
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:44.991
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.012
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.018
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.024
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.028
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.033
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.038
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.045
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.048
+!MESSAGE XSCT Command: [version -server], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.052
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1.2]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.055
+!MESSAGE XSCT Command: [version], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.058
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1.2
+SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.060
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.067
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.070
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.086
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.088
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.096
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.098
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.114
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.116
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.124
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.126
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.145
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.168
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.176
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.181
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.197
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.199
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.215
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.220
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.223
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.228
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.232
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.236
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.266
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.270
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.314
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.319
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.357
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.361
+!MESSAGE XSCT Command: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello/Debug/animer_hello.elf], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.420
+!MESSAGE XSCT command with result: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello/Debug/animer_hello.elf], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.495
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.522
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.529
+!MESSAGE XSCT Command: [con], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:07:45.538
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:16.920
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-807
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:16.925
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-807
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-11-28 16:08:17.927
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.930
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.938
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.941
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.952
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.955
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.967
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.970
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.987
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:17.989
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.010
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==0} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.014
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.037
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.043
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.047
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.052
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.059
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.062
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.066
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1.2]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.069
+!MESSAGE XSCT Command: [version], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.074
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1.2
+SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.077
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.084
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.087
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.103
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.106
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.114
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.117
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.133
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.136
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.143
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.147
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.169
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.188
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.195
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Basys3 210183A4DA48A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.197
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.213
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Basys3 210183A4DA48A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.217
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.233
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Basys3 210183A4DA48A" && level == 0}], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.237
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.241
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.245
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.249
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.253
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.279
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.284
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.336
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.341
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.371
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.375
+!MESSAGE XSCT Command: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello/Debug/animer_hello.elf], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.436
+!MESSAGE XSCT command with result: [dow U:/Documents/SoC/TP/TP_ublaze_3IS/TP_ublaze_3IS.sdk/animer_hello/Debug/animer_hello.elf], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.507
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.534
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A4DA48A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.539
+!MESSAGE XSCT Command: [con], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-11-28 16:08:18.547
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0
