@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "unistd.h": "c",
-        "math.h": "c",
-        "stat.h": "c"
-    },
-    "cmake.sourceDirectory": "/home/mael-archenault/Desktop/TP_ENSEA_3A/Systeme_et_reseaux/TP4"
-}
