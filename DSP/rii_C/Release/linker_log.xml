@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files (x86)/Analog Devices/VisualDSP 4.5/System/linker_log.xsl"?>
+<DOCUMENT gen_time='Wed Dec 10 17:27:21 2025
+'>
+<MSG id='048EAD38' mid='li3201' type='Informational'>
+<TEXT><![CDATA[Successfully eliminated 3845 bytes in processor 'p0'
+]]></TEXT>
+<EXTENDED_INFO><![CDATA[Eliminated object (0x101,0x102) of size 5 bytes from 'Release\rii.doj(seg_dmda)'
+Eliminated object (_outbuf_causal, _outbuf_causal+0x100) of size 1280 bytes from 'Release\rii.doj(seg_dmda)'
+Eliminated object (_outbuf_non_causal, _outbuf_non_causal+0x100) of size 1280 bytes from 'Release\rii.doj(seg_dmda)'
+Eliminated object (_outbuf, _outbuf+0x100) of size 1280 bytes from 'Release\rii.doj(seg_dmda)'
+]]></EXTENDED_INFO>
+</MSG>
+</DOCUMENT>

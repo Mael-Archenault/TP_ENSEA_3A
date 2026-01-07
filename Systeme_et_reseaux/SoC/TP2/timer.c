@@ -9,13 +9,13 @@ static unsigned int count = 0;
 
 static void timer_callback(struct timer_list *timer)
 {
-    printk(KERN_INFO "Timer fired! count = %u\n", count++);
+    printk(KERN_INFO "Timer triggered | count = %u\n", count++);
     mod_timer(timer, jiffies + HZ);
 }
 
 static int __init timer_init(void)
 {
-    printk(KERN_INFO "Module loaded, starting timer\n");
+    printk(KERN_INFO "Starting timer\n");
     timer_setup(&timer, timer_callback, 0);
     mod_timer(&timer, jiffies + HZ);
 
@@ -25,7 +25,7 @@ static int __init timer_init(void)
 static void __exit timer_exit(void)
 {
     int ret = del_timer_sync(&timer);
-    printk(KERN_INFO "Module exiting, timer deleted (was active = %d)\n", ret);
+    printk(KERN_INFO "Timer deleted\n");
 }
 
 module_init(timer_init);

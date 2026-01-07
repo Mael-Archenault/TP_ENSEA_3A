@@ -1,0 +1,2 @@
+Cross Compile
+    make -C ~/linux-socfpga/ M=$(pwd) CROSS_COMPILE=/usr/bin/arm-linux-gnueabihf- ARCH=arm

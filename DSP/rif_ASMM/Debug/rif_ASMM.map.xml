@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files (x86)/Analog Devices/VisualDSP 4.5/System/linker_map_ss1.xsl"?>
+<!DOCTYPE DOCUMENT SYSTEM "file:///C:/Program Files (x86)/Analog Devices/VisualDSP 4.5/System/linker_map.dtd">
+<DOCUMENT>
+<LINKPROJECT id='037A00F0' name='p0' orig_file_name='Debug\rif_ASMM.dxe' architecture='ADSP-21262' >
+<FILE_NAME><![CDATA[Debug\rif_ASMM.dxe]]></FILE_NAME>
+<MEMORY id='038589C8' name='seg_rth' start_address='0x80000' end_address='0x800ff' type='PM' qualifier='RAM' width='0x30' words_used='0x7' words_unused='0xf9' >
+<OUTPUT_SECTIONS>
+<OUTPUT_SECTION id='0385ACF0' name='seg_rth' type='SHT_PROGBITS' start_address='0x80000' word_size='0x7' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+<INPUT_SECTION id='04943880' name='seg_rth' start_address='0x80000' size='0x7' element_at='0x0' >
+<INPUT_FILE><![CDATA[Debug\riftest.doj]]></INPUT_FILE>
+<SYMBOL name='initial_setup' address='0x80000' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+</INPUT_SECTION>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+</OUTPUT_SECTIONS>
+</MEMORY>
+<MEMORY id='038589D8' name='seg_init' start_address='0x80100' end_address='0x801ff' type='PM' qualifier='RAM' width='0x30' words_used='0x0' words_unused='0x100' >
+<OUTPUT_SECTIONS>
+<OUTPUT_SECTION id='0385A7F0' name='seg_init' type='SHT_PROGBITS' start_address='0x80100' word_size='0x0' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+</OUTPUT_SECTIONS>
+</MEMORY>
+<MEMORY id='03858988' name='seg_int_code' start_address='0x80200' end_address='0x802ef' type='PM' qualifier='RAM' width='0x30' words_used='0x0' words_unused='0xf0' >
+<OUTPUT_SECTIONS>
+<OUTPUT_SECTION id='0385ACB0' name='seg_int_code' type='SHT_PROGBITS' start_address='0x80200' word_size='0x0' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+</OUTPUT_SECTIONS>
+</MEMORY>
+<MEMORY id='03858858' name='seg_pmco' start_address='0x802f0' end_address='0x841ff' type='PM' qualifier='RAM' width='0x30' words_used='0x1f' words_unused='0x3ef1' >
+<OUTPUT_SECTIONS>
+<OUTPUT_SECTION id='0385AE70' name='seg_pmco' type='SHT_PROGBITS' start_address='0x802f0' word_size='0x1f' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+<INPUT_SECTION id='03850748' name='seg_pmco' start_address='0x802f0' size='0xa' element_at='0x0' >
+<INPUT_FILE><![CDATA[Debug\rif.doj]]></INPUT_FILE>
+<SYMBOL name='rif' address='0x802f0' size='0xa' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='macs' address='0x802f7' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='rif.END' address='0x802fa' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+</INPUT_SECTION>
+<INPUT_SECTION id='03774A90' name='seg_pmco' start_address='0x802fa' size='0x15' element_at='0x0' >
+<INPUT_FILE><![CDATA[Debug\riftest.doj]]></INPUT_FILE>
+<SYMBOL name='begin' address='0x802fa' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='filtering' address='0x8030a' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='done' address='0x8030b' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='rif_init' address='0x8030c' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='zero' address='0x8030d' size='0x0' binding='LOCAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+</INPUT_SECTION>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+</OUTPUT_SECTIONS>
+</MEMORY>
+<MEMORY id='03858898' name='seg_pmda' start_address='0x86300' end_address='0x87fff' type='PM' qualifier='RAM' width='0x20' words_used='0x0' words_unused='0x1d00' >
+<OUTPUT_SECTIONS>
+<OUTPUT_SECTION id='0385AD70' name='seg_pmda' type='SHT_PROGBITS' start_address='0x86300' word_size='0x0' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+</OUTPUT_SECTIONS>
+</MEMORY>
+<MEMORY id='03858938' name='seg_dmda' start_address='0xc0000' end_address='0xc7fff' type='DM' qualifier='RAM' width='0x20' words_used='0x8000' words_unused='0x0' >
+<OUTPUT_SECTIONS>
+<OUTPUT_SECTION id='0385ADF0' name='.bss' type='SHT_NOBITS' start_address='0xc0000' word_size='0x0' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+<OUTPUT_SECTION id='0385A870' name='seg_dmda' type='SHT_PROGBITS' start_address='0xc0000' word_size='0x8000' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+</OUTPUT_SECTIONS>
+</MEMORY>
+<MEMORY id='03858848' name='seg_sram' start_address='0x1000000' end_address='0x2ffffff' type='DM' qualifier='DMAONLY' width='0x8' words_used='0x0' words_unused='0x2000000' >
+<OUTPUT_SECTIONS>
+<OUTPUT_SECTION id='0385A8B0' name='seg_sram' type='SHT_PROGBITS' start_address='0x1000000' word_size='0x0' word_size_unmapped='0x0' >
+<INPUT_SECTIONS>
+</INPUT_SECTIONS>
+</OUTPUT_SECTION>
+</OUTPUT_SECTIONS>
+</MEMORY>
+<LDF_SYMBOLS>
+<SYMBOL name='ldf_seginit_space' address='0x80100' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='heaps_and_stack' address='0xc0000' size='0x8000' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='heaps_and_stack_length' address='0x8000' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='ldf_stack_space' address='0xc0000' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='ldf_stack_end' address='0xc4000' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='ldf_stack_length' address='0x4000' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='ldf_heap_space' address='0xc4000' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='ldf_heap_end' address='0xc8000' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+<SYMBOL name='ldf_heap_length' address='0x4000' size='0x0' binding='GLOBAL'><DEMANGLED_NAME><![CDATA[]]></DEMANGLED_NAME></SYMBOL>
+</LDF_SYMBOLS>
+</LINKPROJECT>
+</DOCUMENT>

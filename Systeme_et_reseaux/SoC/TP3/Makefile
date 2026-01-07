@@ -1,10 +1,8 @@
-obj-m := hello.o parameter.o entry.o timer.o
-module−objs := hello.o parameter.o entry.o timer.o
+obj-m := gpio-leds.o chenillard.o
+module−objs := gpio-leds.o chenillard.o
 KERNEL_SOURCE = /lib/modules/$(shell uname -r)/build
 
 CFLAGS_MODULE=-fno-pic
-# remove warnings
-CFLAGS_MODULE= -w
 
 all :
 		make -C $(KERNEL_SOURCE) M=$(PWD) modules

@@ -4,13 +4,11 @@
 #include <linux/proc_fs.h>
 #include <linux/uaccess.h>
 
-#define PROC_NAME "hello_proc"
-
 
 static struct proc_dir_entry *entry;
 
 static ssize_t proc_read(struct file *file, char __user *buf, size_t count, loff_t *pos) {
-    char msg[] = "Hello from kernel!\n";
+    char msg[] = "Entry content!\n";
     return simple_read_from_buffer(buf, count, pos, msg, sizeof(msg)-1);
 }
 
@@ -33,7 +31,5 @@ static void __exit entry_exit(void) {
 
 module_init(entry_init);
 module_exit(entry_exit);
-
-
 
 

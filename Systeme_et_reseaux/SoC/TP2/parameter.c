@@ -12,4 +12,10 @@ static int __init parameter_init(void)
   return 0;
 }
 
+static void __exit parameter_exit(void) {
+    printk(KERN_INFO "Module removed\n");
+}
+
+
 module_init(parameter_init);
+module_exit(parameter_exit);
